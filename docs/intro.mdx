@@ -1,0 +1,123 @@
+---
+sidebar_position: 1
+---
+
+# Welcome to Silverspoon
+
+This site uses Docusaurus + MDX. The **BrowserWindow** below frames content like a browser window so previews feel more intuitive.
+
+## UI preview
+
+<BrowserWindow url="https://app.silverspoon.example/dashboard" minHeight={320}>
+  <div style={{display: 'flex', gap: '1.5rem', alignItems: 'flex-start', flexWrap: 'wrap'}}>
+    <div style={{flex: '1 1 200px'}}>
+      <h2 style={{marginTop: 0}}>Summary</h2>
+      <p style={{marginBottom: '0.75rem'}}>
+        {
+          'Replace this with a screenshot, a static diagram (image), or markup that mimics your product UI.'
+        }
+      </p>
+      <ul style={{marginBottom: 0}}>
+        <li>
+          Prop <code>url</code>: address bar text (visual label only).
+        </li>
+        <li>
+          Props <code>minHeight</code> / <code>style</code> / <code>bodyStyle</code>: size and padding for the content area.
+        </li>
+      </ul>
+    </div>
+    <div style={{flex: '0 0 180px', textAlign: 'center'}}>
+      <img
+        alt="Illustration"
+        src="/img/undraw_docusaurus_react.svg"
+        width={180}
+        height={150}
+      />
+    </div>
+  </div>
+</BrowserWindow>
+
+**Yes — as a visual frame.** `BrowserWindow` **does not** fetch the URL; `url` is only text in the chrome. You fill the window manually (for example with sample JSON). For a real response from an endpoint, capture it first (curl, app, logs) and paste it as text / use a fenced block outside the window.
+
+### Sample API response (static JSON)
+
+Inside `BrowserWindow`, use **`PrettyJsonCodeBlock`** (registered globally in `MDXComponents`): the `source` prop can be messy in MDX — after `JSON.parse` succeeds, the output is always `JSON.stringify(..., null, 2)` (pretty-print). Prism + copy still come from the theme `CodeBlock`. Avoid raw `` ``` `` fences inside tabs.
+
+<BrowserWindow url="GET https://api.silverspoon.example/v1/profile" minHeight={320} bodyStyle={{padding: 0}}>
+  <Tabs groupId="api-profile-response" queryString>
+    <TabItem value="200" label="200" default>
+      <PrettyJsonCodeBlock title="200 OK" source={`
+        {
+          "id": "usr_01",
+          "displayName": "Example",
+          "plan": "trial",
+          "createdAt": "2026-05-17T00:00:00.000Z"
+        }
+      `}/>
+    </TabItem>
+  </Tabs>
+</BrowserWindow>
+
+The **BrowserWindow** component lives in `src/components/BrowserWindow` (same pattern as the [Docusaurus repo](https://github.com/facebook/docusaurus/tree/main/website/src/components/BrowserWindow), MIT).
+
+### Markup sample
+
+```text title="Example"
+<BrowserWindow url="https://example.com/page">
+  Preview content.
+</BrowserWindow>
+```
+
+## Code blocks
+
+Markdown fences (three backticks + language + meta like `title` / line highlights) render through the **`code`** → `MDXCode` mapping in `src/theme/MDXComponents.tsx` (Prism, titles, etc.).
+
+```js {1,2,3} title="greet.js"
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+```
+
+```json title="package.json (snippet)"
+{
+  "name": "silverspoon",
+  "private": true
+}
+```
+
+## Tabs
+
+`Tabs` and `TabItem` are registered globally in `MDXComponents`. For install commands in tabs, this page uses monospace text — raw `` ``` `` fences inside `<TabItem>` often break the MDX v3 parser.
+
+<Tabs groupId="intro-stack" queryString>
+  <TabItem value="npm" label="npm">
+    <p>
+      {'Install: '}
+      <code>npm install silverspoon</code>
+    </p>
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+    <p>
+      {'Install: '}
+      <code>pnpm add silverspoon</code>
+    </p>
+  </TabItem>
+  <TabItem value="yarn" label="Yarn">
+    <p>
+      {'Install: '}
+      <code>yarn add silverspoon</code>
+    </p>
+  </TabItem>
+</Tabs>
+
+Common props: `groupId`, `queryString`, `defaultValue` / `default` on a tab.
+
+### Without global registration
+
+```text title="Manual imports"
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import BrowserWindow from '@site/src/components/BrowserWindow';
+```
+
+If the page is not wrapped with `MDXContent`, import components as above.
