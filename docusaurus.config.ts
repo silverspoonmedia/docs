@@ -95,6 +95,16 @@ const config: Config = {
               docId: 'vtual/about',
               label: 'vTual',
             },
+            {
+              type: 'doc',
+              docId: 'archivd/about',
+              label: 'Archivd',
+            },
+            {
+              type: 'doc',
+              docId: 'microstock/about',
+              label: 'Microstock',
+            },
           ],
         },
       ],
@@ -108,6 +118,31 @@ const config: Config = {
             {
               label: 'vTual',
               to: '/docs/vtual/about',
+            },
+            {
+              label: 'Archivd',
+              to: '/docs/archivd/about',
+            },
+            {
+              label: 'Microstock',
+              to: '/docs/microstock/about',
+            },
+          ],
+        },
+        {
+          title: 'Core',
+          items: [
+            {
+              label: 'Account & Security',
+              to: '/docs/account/',
+            },
+            {
+              label: 'Billing & Subscriptions',
+              to: '/docs/billing/',
+            },
+            {
+              label: 'Notifications',
+              to: '/docs/notifications',
             },
           ],
         },

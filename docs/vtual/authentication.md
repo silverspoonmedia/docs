@@ -60,3 +60,7 @@ If your account recovery request is approved, you can then reset your password, 
 ![vTual password reset](/assets/docs/vtual/Auth_Email_Recover_Password_Reset.webp)
 
 This process lets you securely regain access to your account and continue using the platform.
+
+:::note
+Registration, sign-in, two-factor authentication, connected accounts, and password recovery are platform-wide, not specific to vTual. The pages above show the screens you see when you arrive from vTual; for the full explanation, see [Account & Security](/docs/account/).
+:::

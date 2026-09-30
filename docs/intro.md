@@ -60,6 +60,22 @@ The service is open to anyone. If you are a content creator, you can register yo
 
 If you need help with anything, we are happy to assist. Start with the [vTual documentation](/docs/vtual/about).
 
+### Archivd
+
+Archivd is our file storage product: a lightweight drive for keeping, organizing, and sharing files, with paid team workspaces for working on the same files together.
+
+Everyone gets a personal drive with nested folders, chunked uploads, a trash bin, and link sharing. Paid accounts add team workspaces, where you invite people by email and give each of them a role, and where the files draw on the workspace owner's storage rather than each member's own allowance.
+
+Start with the [Archivd documentation](/docs/archivd/about).
+
+### Microstock
+
+Microstock turns a folder of images into the metadata a stock marketplace expects: titles, descriptions, categories, and keywords. The drafting is done by AI, and you review and curate the result before exporting.
+
+It runs inside a dedicated Archivd workspace, so uploads, quota, and file handling all come from the same place. It is opt-in, activated from the service catalog, and its AI analysis is billed separately from storage.
+
+Start with the [Microstock documentation](/docs/microstock/about).
+
 ### GetLanded
 
 GetLanded is an open-source product that simplifies building landing pages for individuals, groups, and companies. Instead of plain HTML, it is built on the **Laravel** framework, so you can add custom system logic whenever you need it.
@@ -83,8 +99,8 @@ GetLanded is still developed internally and is not yet available to the public. 
 
 This documentation is organized around how the platform is built:
 
-- **Products** covers each product's features and how to use them.
-- **Core** covers the shared capabilities every product builds on, such as billing and legal.
+- **Products** covers each product's features and how to use them, starting with vTual, Archivd, and Microstock.
+- **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
 - **Company** covers who we are and the official domains we operate.
 - **Guides** covers practical walkthroughs for external matters.
 

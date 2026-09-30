@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Feature-by-feature documentation for every product on the platform,
-        starting with vTual.
+        Feature-by-feature documentation for every product on the platform:
+        vTual, Archivd, and Microstock.
       </>
     ),
   },
@@ -25,8 +25,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        The shared capabilities every product builds on, such as billing,
-        payments, and legal.
+        The shared capabilities every product builds on: your account and
+        security, billing and subscriptions, notifications, and legal.
       </>
     ),
   },
