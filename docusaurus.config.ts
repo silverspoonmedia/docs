@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://help.silverspoon.me',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -81,66 +81,85 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Docs',
         },
-        // {
-        //   to: '/blog',
-        //   label: 'Blog',
-        //   position: 'left'
-        // },
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          type: 'dropdown',
+          label: 'Products',
+          position: 'left',
+          items: [
+            {
+              type: 'doc',
+              docId: 'vtual/about',
+              label: 'vTual',
+            },
+          ],
+        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Products',
           items: [
             {
-              label: 'Tutorial',
+              label: 'vTual',
+              to: '/docs/vtual/about',
+            },
+          ],
+        },
+        {
+          title: 'Company',
+          items: [
+            {
+              label: 'Introduction',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Contact',
+              to: '/docs/silverspoon/contact',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Domains',
+              to: '/docs/silverspoon/domain',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Legal',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Overview',
+              to: '/docs/legal/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Terms of Service',
+              to: '/docs/legal/terms',
+            },
+            {
+              label: 'Privacy Policy',
+              to: '/docs/legal/privacy',
+            },
+            {
+              label: 'FAQ',
+              to: '/docs/legal/faq',
+            },
+          ],
+        },
+        {
+          title: 'External',
+          items: [
+            {
+              label: 'Status',
+              href: 'https://status.silverspoon.me',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Silverspoon. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Silverspoon Media. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

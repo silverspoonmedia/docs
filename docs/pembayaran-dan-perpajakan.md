@@ -1,49 +1,48 @@
 ---
-title: Pembayaran dan perpajakan
-description: Bagaimana Silverspoon memilah pembayaran dan kewajiban perpajakan untuk pelanggan Indonesia versus internasional.
-sidebar_label: Pembayaran & pajak
+title: Payments and Taxation
+description: How Silverspoon splits payment flows and tax obligations between Indonesian and international customers.
+sidebar_label: Payments & Tax
+sidebar_position: 1
 ---
 
-# Pembayaran dan perpajakan
+# Payments and Taxation
 
-Dokumen ini menjelaskan **cara aplikasi memilah alur pembayaran** dan **siapa yang menanggung perpajakan** bergantung pada **lokasi atau status pelanggan** relatif terhadap Indonesia.
+This document explains **how the platform splits payment flows** and **who carries the tax obligation**, depending on the **location or status of the customer** relative to Indonesia.
 
-> **Catatan mengenai permintaan asli:** poin kedua dalam daftar kebutuhan tertulis dengan kalimat pembuka yang sama dengan poin pertama (“transaksi terhadap orang Indonesia”). Secara substansi, alur **Merchant of Record (MoR)** seperti Polar atau Lemon Squeezy dipakai untuk **pelanggan di luar Indonesia / transaksi internasional**. Isi di bawah mengikuti interpretasi itu. Jika kebijakan internal Anda berbeda, sesuaikan teks ini.
+:::info[Scope]
+The flows below assume the standard split: domestic transactions run through an Indonesian payment gateway, while international transactions run through a Merchant of Record. If internal policy differs, adjust this document accordingly.
+:::
 
----
+## 1. Customers in Indonesia
 
-## 1. Pelanggan Indonesia
+When a transaction is made by **a customer within the Indonesian scope** (handled as a domestic transaction under product policy):
 
-Jika transaksi dilakukan oleh **pelanggan yang berada dalam lingkup Indonesia** (yang ditangani sebagai transaksi domestik menurut kebijakan produk Anda):
+- **Payment** is processed through an **Indonesian payment gateway**, and the transaction is **made in Silverspoon's name**. From the customer's point of view, Silverspoon appears as the seller and the party collecting payment, in line with the gateway configuration and contract.
+- **Taxation** on that domestic transaction is **handled by Silverspoon**, because Silverspoon is a **legal entity domiciled in Indonesia** and is responsible for the tax obligations attached to domestic sales under applicable regulations.
 
-- **Pembayaran** diproses melalui **payment gateway Indonesia**, dan transaksi tersebut **dilakukan atas nama Silverspoon** (Silverspoon tampil sebagai pihak penjual/pemungut pembayaran dari sudut pandang pelanggan, sesuai konfigurasi gateway dan kontrak).
-- **Perpajakan** terkait transaksi domestik tersebut **ditangani oleh Silverspoon**, karena Silverspoon merupakan **subjek hukum (entitas) yang berkedudukan di Indonesia** dan bertanggung jawab atas pemenuhan kewajiban perpajakan yang melekat pada penjualan dalam negeri sesuai peraturan yang berlaku.
+**Why it works this way:** a domestic gateway plus an Indonesian entity keeps **cash flow**, **invoices and receipts**, and **sales or income tax obligations** inside a single Indonesian jurisdictional chain. There is no need to move the seller role to a foreign party for a transaction that is genuinely domestic.
 
-**Mengapa logikanya begitu:** gateway domestik + entitas Indonesia menggabungkan **arus kas**, **faktur/struk**, dan **kewajiban pajak penjualan/PPh** dalam satu rantai yang berada di yurisdiksi Indonesia, sehingga tidak perlu memindahkan peran penjual ke pihak asing untuk transaksi yang memang domestik.
+## 2. Customers outside Indonesia (Merchant of Record flow)
 
----
+When a transaction is made by **a customer outside the Indonesian domestic scope**, such as an international customer, payment can be processed through a **MoR platform** such as **Polar** or **Lemon Squeezy**:
 
-## 2. Pelanggan di luar Indonesia (alur Merchant of Record)
+- **Payment and consumer tax compliance in the customer's country** (VAT, GST, sales tax, relevant withholdings, and so on) are generally **handled by the MoR entity** in each country, according to that provider's capabilities and legal model.
+- **The transaction between the international customer and the MoR** is made **in the MoR entity's name**, **not** in Silverspoon's name as a direct seller to the end consumer at the MoR checkout layer.
+- **Silverspoon's tax obligation** on this path **does not replace** the tax already satisfied on the MoR side. What is reported and accounted for on Silverspoon's side is **tax on the income Silverspoon receives**, such as revenue share, fees, or settlement after the MoR deducts commission, transaction tax, and other costs under the MoR contract, **once** the tax obligations on the MoR side and in the relevant country have been met.
 
-Jika transaksi dilakukan oleh **pelanggan yang bukan dalam lingkup transaksi domestik Indonesia** (misalnya pelanggan internasional), pembayaran dapat diproses melalui **platform MoR** (misalnya **Polar**, **Lemon Squeezy**, atau penyedia sejenis):
+**Why it works this way:** the MoR lends its **legal "skin"** as the seller of record to the consumer, so **invoicing and tax collection** follow the **consumer's country rules** and the **MoR's own terms**. Silverspoon is closer to a **net revenue recipient** in a B2B relationship with the MoR, and Indonesian tax on Silverspoon follows the **character of the income flowing into the Indonesian entity**, not the full gross checkout paid by an overseas customer.
 
-- **Pembayaran dan pemenuhan pajak konsumen di negara pelanggan** (VAT/GST/sales tax, pemotongan yang relevan, dll., sesama aturan penyedia) umumnya **ditangani oleh entitas MoR** di masing-masing negara sesuai kemampuan dan model hukum penyedia tersebut.
-- **Transaksi antara pelanggan luar Indonesia dan MoR** dilakukan **atas nama entitas MoR**, **bukan** atas nama Silverspoon sebagai penjual langsung ke konsumen akhir pada lapisan checkout MoR.
-- **Kewajiban perpajakan Silverspoon** pada jalur ini **tidak menggantikan** pajak yang sudah dipenuhi di sisi MoR; yang dilaporkan/diperhitungkan untuk Silverspoon adalah **pajak atas pendapatan yang diterima Silverspoon** (misalnya bagi hasil, fee, atau settlement setelah MoR memotong komisi, pajak transaksi, dan biaya sesuai kontrak dengan MoR) **setelah** kewajiban perpajakan di sisi MoR dan negara terkait telah terpenuhi sesuai ketentuan yang berlaku.
+## Comparison summary
 
-**Mengapa logikanya begitu:** MoR meminjam **legal “skin”** mereka sebagai penjual catatan resmi ke konsumen, sehingga **invoice dan tax collection** mengikuti aturan **negara konsumen** dan **ketentuan MoR**. Silverspoon di sini lebih mirip **penerima net revenue** dari hubungan B2B dengan MoR; pajak Indonesia atas Silverspoon mengikuti **karakter pendapatan yang masuk ke entitas Indonesia** (bukan seluruh bruto checkout pelanggan luar negeri).
-
----
-
-## Ringkasan perbandingan
-
-| Aspek | Indonesia (Silverspoon langsung) | Internasional (MoR) |
-|--------|-----------------------------------|----------------------|
-| Jalur pembayaran | Payment gateway Indonesia | Platform MoR (Polar, Lemon Squeezy, dll.) |
-| Nama pada transaksi ke pelanggan | Silverspoon | Entitas MoR |
-| Fokus pemenuhan pajak transaksi | Silverspoon (yurisdiksi Indonesia) | MoR + aturan negara pelanggan |
-| Posisi Silverspoon | Penjual domestik | Penerima pendapatan pasca-MoR (sesuai kontrak) |
+| Aspect | Indonesia (Silverspoon direct) | International (MoR) |
+|--------|-------------------------------|---------------------|
+| Payment route | Indonesian payment gateway | MoR platform (Polar, Lemon Squeezy, and similar) |
+| Name on the customer-facing transaction | Silverspoon | The MoR entity |
+| Focus of transaction tax compliance | Silverspoon (Indonesian jurisdiction) | MoR plus the customer's country rules |
+| Silverspoon's position | Domestic seller | Post-MoR revenue recipient, per contract |
 
 ---
 
-Dokumen ini bersifat **penjelasan operasional dan kebijakan internal** untuk dokumentasi produk. Untuk klasifikasi transaksi per negara, tarif, dan pelaporan pajak konkret, **wajib** dikunci bersama penasihat pajak dan hukum yang berwenang.
+:::warning
+This document is an **operational and internal policy explanation** for product documentation. For per-country transaction classification, rates, and concrete tax reporting, the details **must** be locked together with qualified tax and legal advisors.
+:::

@@ -1,0 +1,9 @@
+{
+  "label": "Legal & Policies",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/vtual-legal",
+    "description": "The terms, privacy notices, and policies that apply to vTual."
+  }
+}
