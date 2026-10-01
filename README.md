@@ -1,41 +1,35 @@
-# Website
+# Silverspoon Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+The user-facing documentation site for the Silverspoon platform — the customer's manual for vTual, Archivd, Microstock, and the shared account, billing, notification, and legal surfaces. Built with [Docusaurus](https://docusaurus.io/) 3 and published at `https://help.silverspoon.me`.
 
-## Installation
+Every page under `docs/` is read by a customer, not by an agent. Agent pakem for this repo lives in [`.cursor/rules/`](.cursor/rules/) with the map in [`AGENTS.md`](AGENTS.md); `docs-coverage.json` is the machine-checked claim that every shipped user-facing capability has a page.
 
-```bash
-yarn
+## Local development
+
+```sh
+npm install
+npm start
 ```
 
-## Local Development
+The dev server serves the site with live reload; most changes apply without a restart.
 
-```bash
-yarn start
+## Gates
+
+```sh
+npm run check:docs   # coverage manifest, orphan pages, config doc ids, rule budgets
+npm run typecheck
+npm run build        # onBrokenLinks + onBrokenAnchors both throw
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+`check:docs` reads the sibling `monolith` checkout for the product-domain claim. CI checks out this repo alone, so that one claim is reported as *unverified* there — run the guard from a machine with both checkouts when a product is added or removed.
 
 ## Deployment
 
-Using SSH:
+The hosting target for `help.silverspoon.me` is **not decided yet**, so publishing stays manual and CI is build-only. `npm run build` produces `build/`, servable by any static host. When a target is chosen, add the deploy job to [`.github/workflows/ci.yml`](.github/workflows/ci.yml) and the environment contract to `.cursor/rules/`.
 
-```bash
-USE_SSH=true yarn deploy
-```
+## Content rules
 
-Not using SSH:
+Read [`.cursor/rules/docs-pakem.mdc`](.cursor/rules/docs-pakem.mdc) for the page shape and [`.cursor/rules/docs-sync.mdc`](.cursor/rules/docs-sync.mdc) for when a page must change. Two that catch people out:
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- **English only.** The site's locale set is `['en']` by design; the product's seven locales are a different surface.
+- **Write what shipped.** A page describing behavior the platform does not have is a defect, not a placeholder.

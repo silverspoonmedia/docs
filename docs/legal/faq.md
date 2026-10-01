@@ -33,7 +33,7 @@ Nevertheless, the core features will remain free and will not be commercialized,
 
 We will only commercialize additional or cosmetic features, which allows us to enhance the user experience without compromising the core functionality of our services.
 
-For how paid features are billed and taxed, see [Payments and Taxation](/docs/pembayaran-dan-perpajakan).
+For how paid features are billed and taxed, see [Payments and Taxation](/docs/billing/payments-and-taxation).
 
 ## Will there be multilingual support?
 

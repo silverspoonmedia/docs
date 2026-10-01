@@ -26,6 +26,9 @@ const config: Config = {
   // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
+  // Dead `#anchors` are the same class of defect as dead paths: a reworded
+  // heading silently breaks every deep link into it. Default is `warn`.
+  onBrokenAnchors: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

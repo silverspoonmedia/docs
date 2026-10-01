@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "note": "Capability -> page manifest: the claim that every shipped user-facing capability has a page. `source` names the code that owns the behavior. `npm run check:docs` fails when a page does not exist, is not reachable from sidebars.ts, or when a `kind => 'product'` domain in monolith/config/domains.php has no `product.<kebab>` entry.",
+  "capabilities": {
+    "platform.introduction": { "page": "docs/intro.md", "source": "silverspoon/platform" },
+
+    "account.overview": { "page": "docs/account/index.md", "source": "monolith/app/Domain/Identity" },
+    "account.registration-and-login": { "page": "docs/account/registration-and-login.md", "source": "monolith/app/Domain/Identity" },
+    "account.two-factor-authentication": { "page": "docs/account/two-factor-authentication.md", "source": "monolith/app/Domain/Identity" },
+    "account.connected-accounts": { "page": "docs/account/connected-accounts.md", "source": "monolith/app/Domain/Identity" },
+    "account.password-and-recovery": { "page": "docs/account/password-and-recovery.md", "source": "monolith/app/Domain/Identity" },
+
+    "notification.bell": { "page": "docs/notifications.md", "source": "monolith/app/Domain/Notification" },
+
+    "billing.overview": { "page": "docs/billing/index.md", "source": "monolith/app/Domain/PaymentGateway" },
+    "billing.services-and-subscriptions": { "page": "docs/billing/services-and-subscriptions.md", "source": "monolith/app/Domain/Service" },
+    "billing.invoices-and-payments": { "page": "docs/billing/invoices-and-payments.md", "source": "monolith/app/Domain/PaymentGateway" },
+    "billing.payments-and-taxation": { "page": "docs/billing/payments-and-taxation.md", "source": "silverspoon/finance" },
+
+    "product.archivd": { "page": "docs/archivd/about.md", "source": "monolith/app/Domain/Archivd" },
+    "archivd.files-and-folders": { "page": "docs/archivd/files-and-folders.md", "source": "monolith/app/Domain/Archivd" },
+    "archivd.sharing": { "page": "docs/archivd/sharing.md", "source": "monolith/app/Domain/Archivd" },
+    "archivd.storage-and-plans": { "page": "docs/archivd/storage-and-plans.md", "source": "monolith/app/Domain/Service" },
+    "archivd.workspaces": { "page": "docs/archivd/workspaces.md", "source": "monolith/app/Domain/Archivd" },
+
+    "product.vtual": { "page": "docs/vtual/about.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.homepage": { "page": "docs/vtual/homepage.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.authentication": { "page": "docs/vtual/authentication.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.creator": { "page": "docs/vtual/creator.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.profile": { "page": "docs/vtual/profile.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.content": { "page": "docs/vtual/content.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.avatar": { "page": "docs/vtual/app/account-manager/avatar.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.biodata": { "page": "docs/vtual/app/account-manager/biodata.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.content": { "page": "docs/vtual/app/account-manager/content.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.gender": { "page": "docs/vtual/app/account-manager/gender.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.handler": { "page": "docs/vtual/app/account-manager/handler.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.language": { "page": "docs/vtual/app/account-manager/language.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.link": { "page": "docs/vtual/app/account-manager/link.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.account-manager.persona": { "page": "docs/vtual/app/account-manager/persona.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.simp.oshi": { "page": "docs/vtual/app/simp/oshi.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.app.simp.content": { "page": "docs/vtual/app/simp/content.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.legal.tos": { "page": "docs/vtual/legal/tos.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.legal.privacy": { "page": "docs/vtual/legal/privacy.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.legal.faq": { "page": "docs/vtual/legal/faq.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.legal.disparity": { "page": "docs/vtual/legal/disparity.md", "source": "monolith/app/Domain/Vtual" },
+    "vtual.legal.help-us": { "page": "docs/vtual/legal/help-us.md", "source": "monolith/app/Domain/Vtual" },
+
+    "product.microstock": { "page": "docs/microstock/about.md", "source": "monolith/app/Domain/Microstock" },
+    "microstock.collections": { "page": "docs/microstock/collections.md", "source": "monolith/app/Domain/Microstock" },
+    "microstock.credits-and-usage": { "page": "docs/microstock/credits-and-usage.md", "source": "monolith/app/Domain/Microstock" },
+    "microstock.export-and-upload": { "page": "docs/microstock/export-and-upload.md", "source": "monolith/app/Domain/Microstock" },
+
+    "legal.overview": { "page": "docs/legal/index.md", "source": "silverspoon/legal" },
+    "legal.terms": { "page": "docs/legal/terms.md", "source": "silverspoon/legal" },
+    "legal.privacy": { "page": "docs/legal/privacy.md", "source": "silverspoon/legal" },
+    "legal.faq": { "page": "docs/legal/faq.md", "source": "silverspoon/legal" },
+
+    "silverspoon.contact": { "page": "docs/silverspoon/contact.md", "source": "silverspoon/legal" },
+    "silverspoon.domain": { "page": "docs/silverspoon/domain.md", "source": "silverspoon/platform" },
+
+    "guide.disposable-email": { "page": "docs/guide/disposable-email.md", "source": "monolith/app/Domain/Identity" }
+  },
+  "waivers": {
+    "inference.model-catalog": "Admin-only model catalog and provider rates — not a customer-facing capability.",
+    "ai.connections": "Admin-only AI connection configuration — operators only.",
+    "activity-log.audit-trail": "Admin-only audit trail viewer — operators only.",
+    "error-log.grouped-errors": "Admin-only persistent error viewer — operators only.",
+    "navigation.menu-tree": "Admin-only menu tree editor — operators only.",
+    "domain-access.visibility": "Admin-only product visibility gate — operators only.",
+    "payment-gateway.channels": "Admin-only payment channel configuration — operators only.",
+    "product-activations.registry": "Admin-only activation registry — operators only.",
+    "blog.authoring": "Admin-only blog authoring — operators only.",
+    "settings.platform": "Admin-only runtime settings editor — operators only."
+  }
+}

@@ -2,7 +2,7 @@
 title: Payments and Taxation
 description: How Silverspoon splits payment flows and tax obligations between Indonesian and international customers.
 sidebar_label: Payments & Tax
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # Payments and Taxation

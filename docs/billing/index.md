@@ -54,4 +54,4 @@ Plan endings are announced in your [notifications](/docs/notifications), so you 
 
 ## Payments and tax
 
-Payment routing and tax obligations differ depending on where you are. That is covered in [Payments and Taxation](/docs/pembayaran-dan-perpajakan), which explains the domestic and international paths.
+Payment routing and tax obligations differ depending on where you are. That is covered in [Payments and Taxation](/docs/billing/payments-and-taxation), which explains the domestic and international paths.

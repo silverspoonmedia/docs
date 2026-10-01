@@ -72,7 +72,7 @@ An invoice is attached to each purchase and carries its own number, which is wha
 
 ## Tax and cross-border payments
 
-Whether a transaction is handled domestically or through an international merchant of record depends on where you are, and it affects who appears as the seller and how tax is handled. That is explained in [Payments and Taxation](/docs/pembayaran-dan-perpajakan).
+Whether a transaction is handled domestically or through an international merchant of record depends on where you are, and it affects who appears as the seller and how tax is handled. That is explained in [Payments and Taxation](/docs/billing/payments-and-taxation).
 
 :::warning
 Do not send payment to any account that is not shown on your own invoice. If instructions look wrong, stop and contact us before paying. See [Contact](/docs/silverspoon/contact).

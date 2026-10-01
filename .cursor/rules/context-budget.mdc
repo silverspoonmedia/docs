@@ -1,0 +1,14 @@
+# Agent context budget
+
+This repo is a peer root in all three Monolith workspaces (`Monolith-Backend`, `Monolith-SPA`, `Monolith-Fullstack`), so this `AGENTS.md` and its four always-on rules inject on **every** turn in those workspaces. Keep them small.
+
+| Task | Open |
+|------|------|
+| Edit a page | That page, plus `docs-coverage.json` when the capability is new |
+| Add a product or section | `sidebars.ts`, `docusaurus.config.ts`, one existing page as the shape reference |
+| Cross-repo page | The page, the manifest entry, and the sibling file that owns the behavior |
+
+- Never `Read` the whole `docs/` tree or the whole `sidebars.ts`. Grep the page path or the heading you need.
+- Never `@folder` or `@docs` in a prompt.
+- One page per concern; a page that outgrows its topic splits into two pages and a sidebar group, not one long page.
+- Target: a `[content]` task stays well under 30k tokens.
