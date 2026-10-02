@@ -1,0 +1,54 @@
+# Docs coverage (mandatory)
+
+A user-facing capability that ships without a page is **not shipped** — the customer cannot use what they cannot read. This rule makes that mechanical: every capability a user can reach has a page here, and every page describes something that exists.
+
+## Two directions, both defects
+
+- **Missing page** — a feature a customer can see or use, with no page here. The manifest `docs-coverage.json` and the owning repo's change set must land together.
+- **Phantom page** — a page describing behavior that was removed, renamed, or never shipped. Fix the page in the same task the behavior changed.
+
+## Trigger map (repo area → page)
+
+| Changed in | Page that must move |
+|------------|---------------------|
+| `Identity` — registration, login, 2FA, password, connected accounts | `docs/account/*` |
+| Notification bell, audiences, read state | `docs/notifications.md` |
+| `PaymentGateway`, invoices, subscriptions, service catalog, refunds | `docs/billing/*` |
+| `Archivd` — files, folders, sharing, trash, storage, workspaces | `docs/archivd/*` |
+| `Vtual` — home, creator profile, account manager, simp, legal | `docs/vtual/*` |
+| `Microstock` — collections, credits, export, marketplace upload | `docs/microstock/*` |
+| Locale list, RTL behavior | `docs/account/index.md` (Language), `docs/intro.md` |
+| Domain, static host, email sender, legacy redirects | `docs/silverspoon/domain.md` |
+| Terms, privacy, FAQ, jurisdiction | `docs/legal/*` |
+| Support, abuse, legal correspondence routing | `docs/silverspoon/contact.md` |
+| Platform narrative, product list, team, jurisdiction | `docs/intro.md` |
+| A new product domain in `monolith/config/domains.php` (`kind => 'product'`) | `docs/{kebab}/about.md` + a `sidebars.ts` group + navbar/footer entries + a `docs-coverage.json` entry |
+| A new user-facing SPA route in `monolith/config/spa-routes.php` | the page that owns that screen |
+
+## The manifest
+
+`docs-coverage.json` at the repo root maps a capability key to the page that documents it and the code that owns it:
+
+```json
+{
+  "version": 1,
+  "capabilities": {
+    "archivd.sharing": { "page": "docs/archivd/sharing.md", "source": "monolith/app/Domain/Archivd" }
+  },
+  "waivers": {
+    "inference.usage": "Admin-only surface — not a customer-facing capability."
+  }
+}
+```
+
+- Add an entry in the same task as the page. `npm run check:docs` fails on an entry whose page is missing or not in the sidebar.
+- A **waiver** is the last resort for a capability that is deliberately undocumented (internal/admin-only), every entry carries a reason, and a waiver whose capability now has a page is itself a finding — the list can only shrink.
+- Every product domain in `monolith/config/domains.php` needs a `product.{kebab}` entry. That check is cross-repo and reported *unverified* when the sibling checkout is absent.
+
+## Never
+
+- Write a page for a feature that has not shipped — a roadmap belongs in the commit message, not the customer's manual.
+- Document an admin-only screen as if a customer could reach it.
+- Let a page and the manifest drift: the manifest is the claim, the guard is the proof.
+
+Gates: `npm run check:docs`. Full page shape: `docs-pakem.mdc` and `docs-content.mdc`.

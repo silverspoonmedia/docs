@@ -1,0 +1,36 @@
+name: CI
+
+# One job, `check`, and it is sibling-free: it never checks out `monolith`, so it
+# carries no credentials. That is deliberate — the sibling is private and
+# `GITHUB_TOKEN` is scoped to the repo running the workflow.
+#
+# The consequence to keep in mind: the product-domain claim in `docs-coverage.json`
+# (every `kind => 'product'` domain in `monolith/config/domains.php` has a page
+# here) is **unverifiable** here, so `check:docs` reports it as `unverified` rather
+# than broken. It is not a false green — the count is printed on the OK line — but a
+# green run does not prove that claim. Run `npm run check:docs` from a machine with
+# both checkouts when a product is added or removed.
+#
+# There is no deploy job. The hosting target for help.silverspoon.me is not decided
+# yet, so publishing stays manual until it is; add the job here when it lands.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run check:docs
+      # `onBrokenLinks` and `onBrokenAnchors` both throw, so the build is the
+      # link-and-anchor gate; `check:docs` covers what a build cannot see.
+      - run: npm run build

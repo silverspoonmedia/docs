@@ -1,0 +1,20 @@
+# Task scope tags (mandatory)
+
+Default is `[content]` when no tag is given. The tag affects **layer coverage only** — every other rule file stays mandatory regardless of tag.
+
+| Tag | Touch |
+|-----|-------|
+| `[content]` | Pages under `docs/**` only: new page, rewrite, corrected copy. Default. |
+| `[site]` | `sidebars.ts`, `docusaurus.config.ts`, `src/**` theme and components, `static/**`, `blog/**` |
+| `[cross-repo]` | A page documents behavior that changed in `monolith` or `monolith-vue-workers` — the code and the page land in the same task |
+
+## `[cross-repo]` layer table
+
+| Layer | What to touch |
+|-------|----------------|
+| Code | The sibling repo change (backend domain, SPA screen) — not this repo |
+| Page | The page named by the trigger map in `docs-sync.mdc` |
+| Manifest | The `docs-coverage.json` entry, added or updated |
+| Navigation | `sidebars.ts` group or `docusaurus.config.ts` navbar/footer entry when the page is new |
+
+A page change without its code counterpart, or a code change without its page, is **incomplete** unless the tag says otherwise.

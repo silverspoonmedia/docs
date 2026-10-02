@@ -1,0 +1,42 @@
+# Docs & rules ownership (mandatory)
+
+This repo is the **published documentation site**. Its `docs/**` tree is read by customers on `help.silverspoon.me` — it is **not** an agent brief like the sibling repos' `docs/**`. Never confuse the two: a brief orients an agent; a page here teaches a user.
+
+| Surface | Owns | Shape |
+|---------|------|-------|
+| `.cursor/rules/*.mdc` | Normative pakem for agents: imperative must/never, exact paths, commands, gates | Self-sufficient — readable without opening any page |
+| `docs/**/*.md` | **Published user-facing page**: what the feature is and how to use it | Front matter + H1 + prose, one capability per page |
+| `AGENTS.md` (repo root) | Pakem map: scope tag + one line per rule file | ~50 lines, zero rule detail |
+| `docs-coverage.json` | Capability → page manifest: which shipped feature is documented where | Machine-checked, never prose |
+
+The three repos' always-on rules are **twins, not copies**: each states its own repo's scope, so a difference is expected and a *contradiction* is the defect. Backend twin: `monolith/.cursor/rules/docs-pakem.mdc`. SPA twin: `monolith-vue-workers/.cursor/rules/docs-pakem.mdc`.
+
+## Page shape (all of it, nothing else)
+
+1. Front matter: `title`, `description`, `sidebar_label`, `sidebar_position` — all four, always.
+2. `# H1` matching `title`.
+3. Prose that answers *what it is* then *how to use it*, in the order a user meets it.
+4. Admonitions (`:::tip`, `:::info`, `:::warning`) only for a real gotcha, never for emphasis.
+5. A closing `Related` pointer or an inline link when another page continues the task.
+
+## Rules
+
+- **One capability per page.** Two features that a user meets separately get two pages; a page that needs an H2 called "Also" is two pages.
+- **Never create `docs/README.md`.** Docusaurus would publish it as a page. Repo setup lives in the root `README.md`, outside the content tree.
+- **URL is the file path.** No `slug:` front matter unless every referrer moves in the same change — `onBrokenLinks: 'throw'` fails the build otherwise.
+- **English only**, in every surface of this repo.
+- **Write what shipped.** A page describing behavior the platform does not have is a defect, not a placeholder. Cite the real UI path, the real plan name, the real locale list.
+- Budgets: glob-scoped rule ≤ 60 lines; all always-on rules combined ≤ 150. The always-on budget is the context every conversation in all three workspaces pays for — when it is exceeded, a rule that only matters for one area must move to a glob scope.
+- Keyword **`wrap up the docs`** = session-wide consolidation of code ↔ pages ↔ rules across all four repos, then run the gates.
+
+## Gates
+
+```sh
+npm run check:docs    # coverage manifest, orphan pages, config doc ids, rule budgets
+npm run typecheck
+npm run build         # onBrokenLinks + onBrokenAnchors both throw
+```
+
+- The guard resolves page reachability from `sidebars.ts`; a page that is not in the sidebar is an orphan and fails.
+- A cross-repo claim (a product domain with no page) is *unverified* when the sibling `monolith` checkout is absent, never *broken* — the same contract the two sibling guards use.
+- Full behavioral rules live in `docs-sync.mdc` and `docs-content.mdc`; this file owns the *shape*.
