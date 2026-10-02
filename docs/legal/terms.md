@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Terms of Service
 
-These terms of service (which we will hereafter refer to as "Terms") govern your use of the Silverspoon platform, including its website and every product it hosts (together or individually hereafter referred to as "Service") operated by SilverSpoon Media (which we will hereafter refer to as "Operator").
+These terms of service (which we will hereafter refer to as "Terms") govern your use of the Silverspoon platform, including its website and every product it hosts (together or individually hereafter referred to as "Service") operated by Silverspoon Media (which we will hereafter refer to as "Operator").
 
 Our [Privacy Policy](/docs/legal/privacy) also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages.
 
@@ -131,7 +131,7 @@ EXCEPT AS PROHIBITED BY LAW, YOU WILL HOLD US AND OUR OFFICERS, DIRECTORS, EMPLO
 
 We may terminate or suspend your account and bar access to the Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of these Terms.
 
-If you wish to terminate your account, you may simply discontinue using the Service.
+If you wish to terminate your account, you may discontinue using the Service.
 
 All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
 

@@ -56,9 +56,7 @@
     "legal.faq": { "page": "docs/legal/faq.md", "source": "silverspoon/legal" },
 
     "silverspoon.contact": { "page": "docs/silverspoon/contact.md", "source": "silverspoon/legal" },
-    "silverspoon.domain": { "page": "docs/silverspoon/domain.md", "source": "silverspoon/platform" },
-
-    "guide.disposable-email": { "page": "docs/guide/disposable-email.md", "source": "monolith/app/Domain/Identity" }
+    "silverspoon.domain": { "page": "docs/silverspoon/domain.md", "source": "silverspoon/platform" }
   },
   "waivers": {
     "inference.model-catalog": "Admin-only model catalog and provider rates — not a customer-facing capability.",

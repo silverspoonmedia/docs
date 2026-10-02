@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Company and guides',
+    title: 'Project and guides',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

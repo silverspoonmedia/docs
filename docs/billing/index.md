@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Billing & Subscriptions
 
-Silverspoon is funded by paid plans and add-ons. This section explains what you can buy, how a purchase works, and how to pay.
+Silverspoon is funded by paid plans and add-ons. This section explains what you can buy, how a purchase works, and how to pay—because invoices rarely explain themselves out of kindness.
 
 Everything you buy is attached to your account rather than to a single product, so a storage plan bought for Archivd is visible from the same catalog that sells a Microstock workspace slot.
 

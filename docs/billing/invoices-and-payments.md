@@ -7,7 +7,7 @@ sidebar_position: 3
 
 # Payments and Invoices
 
-Every purchase generates an invoice, and the purchase page is where you pay it. This page explains the amount breakdown, the payment methods you can choose, and what to expect after paying.
+Every purchase generates an invoice, and the purchase page is where you pay it. This page explains the amount breakdown, payment methods, and what to expect after paying—no ceremonial handshake required.
 
 {/* TODO: screenshot static/assets/docs/billing/checkout-payment-methods.webp */}
 
@@ -21,7 +21,7 @@ The checkout shows three lines:
 | Payment fee | A fee charged by the payment provider. |
 | Total due | What you actually pay. |
 
-The payment fee depends on the method you choose, so it reads as zero until you pick one. Once you select a method, the fee is filled in and the total updates. The fee is paid to the payment provider, not to us, and it is added on top of the service price rather than hidden inside it.
+The payment fee depends on the method you choose, so it reads as zero until you pick one. Once you select a method, the fee is filled in and the total updates. The fee is paid to the payment provider, not to Silverspoon, and it is added on top of the service price rather than hidden inside it.
 
 Because fees differ per method, the page may point out a cheaper option. Switching methods resets the selection, so pick your method before continuing.
 
@@ -75,5 +75,5 @@ An invoice is attached to each purchase and carries its own number, which is wha
 Whether a transaction is handled domestically or through an international merchant of record depends on where you are, and it affects who appears as the seller and how tax is handled. That is explained in [Payments and Taxation](/docs/billing/payments-and-taxation).
 
 :::warning
-Do not send payment to any account that is not shown on your own invoice. If instructions look wrong, stop and contact us before paying. See [Contact](/docs/silverspoon/contact).
+Do not send payment to any account that is not shown on your own invoice. If instructions look wrong, stop and contact Silverspoon before paying. See [Contact](/docs/silverspoon/contact).
 :::

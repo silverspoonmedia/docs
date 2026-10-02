@@ -7,7 +7,7 @@ sidebar_position: 3
 
 # Sharing
 
-Archivd sharing is link based. You mark a file or folder as shareable, and anyone holding the link can open it, without needing an account.
+Archivd sharing is link based. Mark a file or folder as shareable, and anyone holding the link can open it without an account. One link, one job, pleasantly little drama.
 
 {/* TODO: screenshot static/assets/docs/archivd/sharing-dialog.webp */}
 
@@ -56,12 +56,12 @@ Archivd tracks how many times a shared item has been viewed and downloaded, alon
 
 ## Blocked content
 
-We maintain a blocklist of file fingerprints for takedown requests, such as a valid DMCA notice. If a file's contents match an entry on that list:
+Silverspoon maintains a blocklist of file fingerprints for takedown requests, such as a valid DMCA notice. If a file's contents match an entry on that list:
 
 - Turning sharing on for that file is refused, including in bulk when any file in the selection is affected.
 - A link that was already active stops resolving, and guests get a not-found page.
 
-The blocklist is managed by our staff and applies regardless of who owns the file.
+The blocklist is managed by Silverspoon staff and applies regardless of who owns the file.
 
 :::note
 Sharing works the same way inside a team workspace. The paid requirement follows the account that owns the workspace storage, not the person who happens to be looking at the file.

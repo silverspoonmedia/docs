@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Account & Security
 
-Your Silverspoon account is the same account across every product on the platform. Signing in once gives you access to vTual, Archivd, Microstock, and anything we add later, and the security settings you configure here apply everywhere.
+Your Silverspoon account works across every product on the platform. Sign in once to access vTual, Archivd, Microstock, and whatever arrives later. Security settings apply everywhere, saving you from managing several tiny kingdoms of credentials.
 
 This section covers the parts of your account that are shared platform-wide. Product-specific settings, such as your vTual creator profile, live with that product's documentation.
 

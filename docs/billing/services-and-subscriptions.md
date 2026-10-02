@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Services and Subscriptions
 
-The **Services** catalog is where everything purchasable lives: storage plans, workspace slots, AI credit, and the add-ons that extend them.
+The **Services** catalog is where everything purchasable lives: storage plans, workspace slots, AI credit, and the add-ons that extend them. A tidy shelf for things you can buy; capitalism does love a menu.
 
 {/* TODO: screenshot static/assets/docs/billing/services-catalog.webp */}
 

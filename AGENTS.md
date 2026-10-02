@@ -23,6 +23,7 @@
 | `task-scope.mdc` *(always-on)* | Deciding which layers a task must touch |
 | `context-budget.mdc` *(always-on)* | Choosing what to open for a task |
 | `docs-content.mdc` | `docs/**`, `sidebars.ts`, `docusaurus.config.ts`, theme — page shape and navigation |
+| `docs-tone.mdc` | `docs/**` — English playful voice and legal-tone boundaries |
 
 Doc map: [README.md](README.md) (repo setup). Coverage manifest: `docs-coverage.json`. Sibling pakem: `monolith/AGENTS.md`, `monolith-vue-workers/AGENTS.md`.
 
