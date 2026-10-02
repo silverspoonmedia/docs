@@ -67,7 +67,6 @@
     "domain-access.visibility": "Admin-only product visibility gate — operators only.",
     "payment-gateway.channels": "Admin-only payment channel configuration — operators only.",
     "product-activations.registry": "Admin-only activation registry — operators only.",
-    "blog.authoring": "Admin-only blog authoring — operators only.",
     "settings.platform": "Admin-only runtime settings editor — operators only."
   }
 }
