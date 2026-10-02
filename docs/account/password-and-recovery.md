@@ -7,7 +7,7 @@ sidebar_position: 5
 
 # Password and Recovery
 
-Two different jobs live on this page: changing a password you still know, and getting back in when you do not.
+Two different jobs live on this page: changing a password you still know and getting back in when you do not. Passwords, like house keys, are less useful when left under the doormat.
 
 ## Changing your password
 
@@ -30,7 +30,7 @@ Changing your password is also the simplest way to end sessions you no longer tr
 If you cannot sign in, use the **Forgot your password?** link on the sign-in page.
 
 1. Enter the email address on your account.
-2. We send a password reset link to that address.
+2. The platform sends a password reset link to that address.
 3. Open the link and choose a new password.
 
 For privacy, the confirmation message is the same whether or not the address is registered. If a link does not arrive, check your spam folder before requesting another.
@@ -48,7 +48,7 @@ Reset links are short-lived, expiring about an hour after they are sent. An expi
 
 ## If you cannot recover by email
 
-Recovery depends on reaching the email address on your account. If you lose access to that mailbox, we have no way to prove the account is yours, and no automated route back in.
+Recovery depends on reaching the email address on your account. If you lose access to that mailbox, the platform has no way to prove the account is yours, and no automated route back in.
 
 :::warning
 Verify your email address, and keep it current. An unverified or unreachable address is the single most common reason people cannot recover an account.

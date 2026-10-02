@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Notifications
 
-Silverspoon tells you when something happens that affects you: a plan entering grace, a change to your account, and similar events. Notifications arrive in the bell in the top bar and are kept in a history you can revisit.
+Silverspoon tells you when something affects you: a plan entering grace, an account change, or another event worth your attention. Notifications arrive in the top-bar bell and stay in your history, because apparently memory is not a platform feature.
 
 {/* TODO: screenshot static/assets/docs/account/notifications-bell.webp */}
 

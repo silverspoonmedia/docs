@@ -7,19 +7,19 @@ sidebar_position: 2
 
 # Official Domains
 
-Welcome to Silverspoon. Before you use our products, here is a reference for the official domain names we own, use, and manage.
+Welcome to Silverspoon. Before you use Silverspoon products, here is a reference for the official domains Silverspoon owns, uses, and manages. Think of it as your anti-phishing cheat sheet.
 
 ## Why this page exists
 
 As a platform provider, Silverspoon owns, uses, and manages many domain names for different purposes.
 
-To prevent fraud and misinformation, we maintain this page as a way to validate any information you come across online regarding Silverspoon domains and its related products. Use it to tell authentic communication apart from potential scams.
+To prevent fraud and misinformation, Silverspoon maintains this page as a way to validate information you find online about its domains and related products. Use it to tell authentic communication apart from potential scams.
 
 :::tip
-Refer back to this page whenever you have doubts about the legitimacy of a link or email claiming to be from us.
+Refer back to this page whenever you have doubts about the legitimacy of a link or email claiming to be from Silverspoon.
 :::
 
-## How our domains are organized
+## How Silverspoon domains are organized
 
 Silverspoon runs as a single platform that hosts multiple products. One canonical domain serves every product, and each product lives under its own path rather than its own separate site.
 
@@ -65,4 +65,4 @@ Some products previously ran on their own dedicated domains. That is no longer t
 
 ## Imitations
 
-Any domain name not listed on this page should be considered an imitation, and we strongly advise against using it. Unauthorized domains may pose risks, including fraud or misinformation.
+Any domain name not listed on this page should be considered an imitation, and Silverspoon strongly advises against using it. Unauthorized domains may pose risks, including fraud or misinformation.

@@ -7,7 +7,7 @@ sidebar_position: 3
 
 # Export and Upload
 
-Once a collection has been reviewed, you can take the metadata out. There are two routes: a CSV file you handle yourself, and an optional direct upload to a marketplace.
+Once a collection has been reviewed, you can take the metadata out. There are two routes: a CSV file you handle yourself, and an optional direct upload to a marketplace. Choose your preferred flavor of controlled automation.
 
 The CSV is the primary path. Marketplace upload is additive: it does not replace the CSV, and it never moves or deletes anything in your workspace.
 
@@ -60,7 +60,7 @@ If a credential is marked **Failed**, hover or tap the badge to read the last er
 
 From a collection in **review** or **exported**, choose **Upload to marketplace**, then pick a credential. You need at least one saved credential; if you have none, the button points you to the credentials page.
 
-What happens on our side:
+What happens on Silverspoon's side:
 
 1. The upload is queued.
 2. The files and a metadata manifest are transferred over SFTP.
@@ -80,7 +80,7 @@ A few behaviors worth knowing:
 - **Nothing local changes.** Your files stay where they are, and the metadata row survives the upload. If a marketplace rejects the batch, you can fix the metadata and try again.
 - **A completed attempt is not repeated.** Once a batch is uploaded, the same attempt is not re-transferred.
 
-The marketplace's own review queue is the system of record after the upload. We record that the transfer happened and what the marketplace answered; what it does with the files from there is up to that platform.
+The marketplace's own review queue is the system of record after the upload. Silverspoon records that the transfer happened and what the marketplace answered; what it does with the files from there is up to that platform.
 
 ## Currently supported marketplaces
 

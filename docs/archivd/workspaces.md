@@ -7,7 +7,7 @@ sidebar_position: 4
 
 # Team Workspaces
 
-A team workspace is a shared space for files more than one person needs to reach. It sits alongside your personal drive, and the workspace switcher moves you between them.
+A team workspace is a shared space for files more than one person needs to reach. It sits alongside your personal drive, and the workspace switcher moves you between them. Collaboration, now with fewer mystery folders named `final-final-really-final`.
 
 Team workspaces are the paid part of Archivd. The workspace is created and owned by a paid account, and its files count against that owner's storage quota, not against each member's personal allowance.
 

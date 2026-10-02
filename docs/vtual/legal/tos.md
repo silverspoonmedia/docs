@@ -9,7 +9,7 @@ sidebar_position: 12
 
 These product terms cover what is specific to vTual. They supplement the platform [Terms of Service](/docs/legal/terms), which governs your use of vTual and every other Silverspoon product.
 
-:::info[TL;DR]
+:::info[Summary]
 The platform Terms of Service apply in full. This page only adds the rules that exist because vTual tracks content on third-party platforms.
 :::
 

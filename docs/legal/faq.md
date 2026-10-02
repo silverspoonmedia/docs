@@ -15,7 +15,7 @@ A collection of the platform-level questions we expect to come up frequently, an
 
 ## Who is behind this project?
 
-Silverspoon is created, developed, and managed by a programmer and content creator named **Kurokuma Wakaba**, or simply **Waka**.
+Silverspoon is created, developed, and managed by a programmer and content creator named **Waka**.
 
 Currently, it operates as a one-man show for various reasons, mainly because cash flow is still allocated to development and server infrastructure, leaving no monetary allocation to pay other members. That allows Waka to maintain full control over the project's direction and execution.
 

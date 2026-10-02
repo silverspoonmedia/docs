@@ -1,0 +1,23 @@
+---
+description: English playful and dryly sarcastic voice for published documentation
+globs: docs/**
+alwaysApply: false
+---
+
+# Documentation voice
+
+- Write every published page in clear, natural English.
+- Use a playful, warm voice with restrained dry sarcasm. The reader should feel guided, not roasted.
+- When the author speaks personally, use first-person singular (`I`, `my`, `me`); this project has one human behind it, not a committee in a trench coat.
+- Use `Silverspoon` or `the platform` for policies, system behavior, product behavior, and organizational claims. Do not force `I` into statements that are clearer as platform facts.
+- Do not use collective `we`, `our`, or `us` in non-legal copy when `I`, `my`, `me`, `Silverspoon`, or `the platform` is accurate.
+- Leave legal pages under `docs/legal/**` and `docs/vtual/legal/**` unchanged unless legal wording itself must change.
+- Prefer short sentences, concrete verbs, and useful headings. Explain what something is before explaining how to use it.
+- Keep jokes occasional and relevant. Humor must never obscure a step, error, limit, price, privacy practice, security warning, accessibility need, or legal obligation.
+- Never invent behavior, UI paths, plans, limits, guarantees, timelines, or integrations to make prose more entertaining.
+- Keep product names, API names, URLs, routes, code, commands, and user-facing labels exact.
+- Use second person and present tense. Steps use imperative verbs.
+- Keep legal pages precise and formal. Allow only light, non-ambiguous humor; remove humor where it could weaken consent, liability, privacy, copyright, payment, or compliance language.
+- Keep placeholder pages honest: say documentation is being updated and do not imply unavailable behavior.
+- Preserve front matter, headings, URLs, anchors, links, and page structure unless change is required by shipped behavior.
+- Review revised copy aloud for clarity, tone consistency, and accidental claims before running docs gates.

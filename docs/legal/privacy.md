@@ -47,15 +47,7 @@ Our privacy policy may be updated from time to time, and such changes will be po
 
 Some of our services require account registration in order to use them, and if so, most of them require a valid email address as the identification method.
 
-Although registering via email is common for some people, some may be reluctant to share their email address due to privacy. After all, even though we will not share your email address with third parties, your email address is still stored in our system. We consider your concern in this matter and do not have a problem with it.
-
-But even so, a valid email address is still required in the registration process for all services that require it. This is because we need a medium to communicate directly with users when we need to inform or report something urgent about their account.
-
-To address this issue, we recommend that you use an email address from a disposable email service when registering an account. However, if you choose to use this option, please use a long and unusual email address, because the inbox of disposable email services is usually accessible to anyone.
-
-There are tons of disposable email providers that you can choose from; some are free and some are paid with more accessible security options. The choice is in your hands.
-
-We've written a [guide on this](/docs/guide/disposable-email) if you're interested.
+A valid email address is required for services that require registration. We use it to communicate directly with you about urgent account matters.
 
 ## Third-party Privacy Policy
 

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Registration and Login
 
-One account covers the whole platform. This page walks through creating it, confirming your email, and signing in.
+One account covers the whole platform. This page walks through creating it, confirming your email, and signing in—three steps standing between you and the wonderfully glamorous world of account settings.
 
 ## Registering
 
@@ -19,7 +19,7 @@ Open the register page and fill in three things:
 | Email | Used for sign-in, verification, and account recovery. |
 | Password | Entered twice to guard against typos. |
 
-After submitting, we send a verification link to the email address you used. By registering, you agree to the platform [Terms of Service](/docs/legal/terms) and [Privacy Policy](/docs/legal/privacy).
+After submitting, the platform sends a verification link to the email address you used. By registering, you agree to the platform [Terms of Service](/docs/legal/terms) and [Privacy Policy](/docs/legal/privacy).
 
 :::note
 Use an address you can keep long term. It is the only way back into your account if you forget your password.

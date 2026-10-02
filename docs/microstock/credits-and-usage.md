@@ -7,7 +7,7 @@ sidebar_position: 4
 
 # Credits and Usage
 
-AI analysis costs money to run, so Microstock bills it directly rather than folding it into a storage plan. You pay for what you analyze, and you can see exactly where every unit went.
+AI analysis costs money to run, so Microstock bills it directly rather than folding it into a storage plan. You pay for what you analyze, and you can see exactly where every unit went. Even the robots keep receipts.
 
 {/* TODO: screenshot static/assets/docs/microstock/usage-page.webp */}
 

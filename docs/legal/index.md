@@ -30,7 +30,7 @@ The [Terms of Service](/docs/legal/terms) govern your use of the platform and ev
 
 ### Privacy Policy
 
-The [Privacy Policy](/docs/legal/privacy) explains what we collect, how we use it, and how you control it, including the registration and disposable email guidance.
+The [Privacy Policy](/docs/legal/privacy) explains what we collect, how we use it, and how you control it, including what information we require for account registration.
 
 ### Frequently Asked Questions
 

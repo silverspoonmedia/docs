@@ -28,7 +28,7 @@ Currently, vTual only tracks and monitors the activity of verified channels from
 - **Twitch** (profile, streaming)
 - **YouTube** (profile, streaming, past VOD, video, short)
 
-Read the documentation regarding [tracker verification](/docs/vtual/app/account-manager/link#verify-a-link) to utilize this feature. It covers the requirements and steps needed to successfully enable tracking for verified channels.
+Read the vTual [External Link documentation](/docs/vtual/app/account-manager/link) for updates about tracker verification.
 
 Additional services may be introduced based on user requests and needs. We are committed to listening to our community and adapting our offerings to serve you better. By actively seeking feedback and understanding evolving preferences, we aim to enhance the platform and provide features that truly resonate with your requirements.
 

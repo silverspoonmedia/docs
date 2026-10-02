@@ -7,7 +7,7 @@ sidebar_position: 5
 
 # Storage and Plans
 
-This page explains how much room you have, what happens when a plan ends, and where your files live.
+This page explains how much room you have, what happens when a plan ends, and where your files live. Quotas are not exciting, but neither is discovering one at the worst possible moment.
 
 {/* TODO: screenshot static/assets/docs/archivd/quota-bar.webp */}
 

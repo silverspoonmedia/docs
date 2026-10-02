@@ -7,9 +7,9 @@ sidebar_position: 3
 
 # Two-Factor Authentication
 
-Two-factor authentication (2FA) adds a second step to sign-in. Alongside your password, you enter a short code that only your device can produce. If someone learns your password, they still cannot get in without that code.
+Two-factor authentication (2FA) adds a second step to sign-in. Alongside your password, you enter a short code only your device can produce. If someone learns your password, they still cannot get in without that code—which is inconvenient for attackers and excellent for you.
 
-We use standard time-based codes (TOTP), the same kind produced by any authenticator app.
+The platform uses standard time-based codes (TOTP), the same kind produced by any authenticator app.
 
 {/* TODO: screenshot static/assets/docs/account/two-factor-setup.webp */}
 

@@ -7,9 +7,9 @@ sidebar_position: 1
 
 # About Archivd
 
-Archivd is our file storage product: a lightweight drive for keeping, organizing, and sharing your files, plus paid team workspaces for working on the same files together.
+Archivd is Silverspoon's file storage product: a lightweight drive for keeping, organizing, and sharing your files, plus paid team workspaces for working on the same files together.
 
-It is deliberately simple. If you have used a cloud drive before, everything here should feel familiar: folders, drag and drop, a trash bin, and shareable links.
+It is deliberately simple. If you have used a cloud drive before, everything here should feel familiar: folders, drag and drop, a trash bin, and shareable links. No labyrinth, no ritual sacrifice, no mysterious button that only works on Tuesdays.
 
 {/* TODO: screenshot static/assets/docs/archivd/about-overview.webp */}
 

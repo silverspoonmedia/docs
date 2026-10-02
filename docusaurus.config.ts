@@ -150,7 +150,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Company',
+          title: 'Project',
           items: [
             {
               label: 'Introduction',

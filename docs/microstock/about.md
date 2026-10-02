@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # About Microstock
 
-Microstock takes a folder of images and produces the metadata a stock marketplace expects: a title, a description, a category, and keywords. The heavy lifting is done by AI, and you stay in control of the final result.
+Microstock takes a folder of images and produces the metadata a stock marketplace expects: a title, a description, a category, and keywords. The heavy lifting is done by AI, while you remain in control of the final result. The robots draft; you decide whether the comma belongs there.
 
 It is not a separate drive. Microstock runs on top of Archivd, inside a dedicated workspace of its own, so your uploads, quota, and file handling all come from the same place.
 
