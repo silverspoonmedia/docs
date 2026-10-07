@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Feature-by-feature documentation for every product on the platform:
-        vTual, Archivd, and Microstock.
+        Archivd and Microstock.
       </>
     ),
   },
