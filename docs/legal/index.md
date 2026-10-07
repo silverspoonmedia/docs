@@ -40,11 +40,7 @@ The [FAQ](/docs/legal/faq) answers the platform-level questions we expect to be 
 
 Each product publishes its own documents for matters that are specific to it, because data handling, tracked services, and third-party integrations differ per product. For a given product, the platform documents still apply; these documents cover the product-specific parts.
 
-### vTual
-
-- [Product Terms](/docs/vtual/legal/tos) — the terms specific to vTual, on top of the platform Terms of Service.
-- [Privacy Notice: Third-Party Platforms](/docs/vtual/legal/privacy) — how vTual uses the Google, YouTube, and Twitch APIs, and how to withdraw access.
-- [Product FAQ](/docs/vtual/legal/faq) — questions specific to the vTual project.
+No product currently adds its own legal documents. When one does, it will be linked here.
 
 ## Jurisdiction
 

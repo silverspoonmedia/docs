@@ -13,7 +13,7 @@ Connected accounts let Silverspoon read one small, specific piece of information
 
 ## Why connect Discord
 
-Your Discord profile already carries the YouTube and Twitch accounts you have linked there. Connecting Discord lets the platform read that list, which Silverspoon uses to verify that a channel really belongs to you. That is what makes it possible to claim a vTual creator profile or attach a channel without proving ownership by hand.
+Your Discord profile already carries the YouTube and Twitch accounts you have linked there. Connecting Discord lets Silverspoon read that list, so the platforms you use show up in one place instead of you typing them in by hand.
 
 ## Connecting
 
@@ -42,7 +42,7 @@ If a platform you expect to see is missing, link it on Discord first, then sync 
 
 ## Disconnecting
 
-**Disconnect Discord** removes the connection and everything Silverspoon cached from it. Anything that relied on Discord verification, such as a pending vTual channel claim, will need it reconnected to proceed.
+**Disconnect Discord** removes the connection and everything Silverspoon cached from it. The linked-account list disappears with it, and you can reconnect whenever you need it again.
 
 :::tip
 Reconnecting Discord later is quick and does not affect your Silverspoon account itself. The connection is only about reading the linked-account list.
@@ -50,5 +50,4 @@ Reconnecting Discord later is quick and does not affect your Silverspoon account
 
 ## Related
 
-- [vTual creator profiles](/docs/vtual/creator)
 - [Account & Security](/docs/account/)

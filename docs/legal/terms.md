@@ -172,4 +172,4 @@ We integrate third-party services into our platform for security, reliability, a
 
 By using our services, you also agree and are bound by their terms of service.
 
-Individual products may rely on additional third-party services. Those are listed with the product's own terms, such as the [vTual Product Terms](/docs/vtual/legal/tos).
+Individual products may rely on additional third-party services. Those are listed with the product's own terms, when a product publishes them.

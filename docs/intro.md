@@ -15,7 +15,7 @@ Before you dive into the details, here is a quick introduction to who I am. It s
 
 Silverspoon is a collection of products created and maintained by **Waka** (an initial, not a legal name). Most applications are built single-handedly, which is an efficient way to keep meetings short and bug reports emotionally personal.
 
-All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each product lives under its own path, such as `silverspoon.me/vtual`. The capabilities that every product shares, such as authentication and billing, live in one core layer that products build on.
+All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each product lives under its own path, such as `silverspoon.me/archivd`. The capabilities that every product shares, such as authentication and billing, live in one core layer that products build on.
 
 Most products are published on the internet and can be used publicly. The codebase is mostly closed source, though several open source projects may appear in the future.
 
@@ -52,14 +52,6 @@ As a user, you are also expected to follow these regulations. I apologize in adv
 
 Only active products are listed here. Professionally, I create and run the following:
 
-### vTual
-
-vTual simplifies the process of keeping up with your favorite content creators, all in one convenient portal. Content creators publish across different services, and manually checking where each piece of content lives is a hassle.
-
-The service is open to anyone. If you are a content creator, you can register your account directly and add it to Silverspoon's tracking database without manual approval. Add links, change your avatar, manage your biodata, or modify your channel; the choice is yours.
-
-If you need help with anything, I am happy to assist. Start with the [vTual documentation](/docs/vtual/about).
-
 ### Archivd
 
 Archivd is Silverspoon's file storage product: a lightweight drive for keeping, organizing, and sharing files, with paid team workspaces for working on the same files together.
@@ -80,7 +72,7 @@ Start with the [Microstock documentation](/docs/microstock/about).
 
 This documentation is organized around how the platform is built:
 
-- **Products** covers each product's features and how to use them, starting with vTual, Archivd, and Microstock.
+- **Products** covers each product's features and how to use them: Archivd and Microstock.
 - **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
 - **Project** covers who I am and the official domains Silverspoon operates.
 - **Guides** covers practical walkthroughs for external matters.

@@ -58,4 +58,4 @@ We integrate these third-party services into our platform which serve as extra s
 
 By using our services, you also agree and are bound by their privacy policy.
 
-Individual products may integrate additional third-party services that process data on their behalf. Those are listed with the product's own privacy notice, such as the [vTual Privacy Notice](/docs/vtual/legal/privacy).
+Individual products may integrate additional third-party services that process data on their behalf. Those are listed with the product's own privacy notice, when a product publishes one.
