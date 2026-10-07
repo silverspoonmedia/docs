@@ -32,14 +32,25 @@ When a transaction is made by **a customer outside the Indonesian domestic scope
 
 **Why it works this way:** the MoR lends its **legal "skin"** as the seller of record to the consumer, so **invoicing and tax collection** follow the **consumer's country rules** and the **MoR's own terms**. Silverspoon is closer to a **net revenue recipient** in a B2B relationship with the MoR, and Indonesian tax on Silverspoon follows the **character of the income flowing into the Indonesian entity**, not the full gross checkout paid by an overseas customer.
 
+## 3. Crypto payments (NOWPayments)
+
+Crypto is a **separate checkout path** from both of the above, available on any invoice as the **Crypto** channel. It is **not** a Merchant of Record.
+
+- **Payment** is collected through **NOWPayments**, which hosts the crypto invoice and confirms the on-chain payment. The buyer sees a **0.5% surcharge** on top of the invoice total, shown as the channel fee before they are redirected.
+- **Settlement** is **H+0**: once NOWPayments reports the payment as **finished**, the funds are marked withdrawable immediately, so crypto income does not wait for a settlement tier the way card and bank channels do.
+- **Taxation** is **Silverspoon's own obligation**, like the domestic path — NOWPayments does not take on the seller role or remit consumer tax. Silverspoon remains the seller of record, and the crypto receipt is treated as consideration received for the sale.
+
+**Why it works this way:** a crypto processor moves value, it does not change who sold what. The seller of record stays Silverspoon, so the tax character of the income does not change just because the settlement rail is a blockchain rather than a bank transfer.
+
 ## Comparison summary
 
-| Aspect | Indonesia (Silverspoon direct) | International (MoR) |
-|--------|-------------------------------|---------------------|
-| Payment route | Indonesian payment gateway | MoR platform (Polar, Lemon Squeezy, and similar) |
-| Name on the customer-facing transaction | Silverspoon | The MoR entity |
-| Focus of transaction tax compliance | Silverspoon (Indonesian jurisdiction) | MoR plus the customer's country rules |
-| Silverspoon's position | Domestic seller | Post-MoR revenue recipient, per contract |
+| Aspect | Indonesia (Silverspoon direct) | International (MoR) | Crypto (NOWPayments) |
+|--------|-------------------------------|---------------------|----------------------|
+| Payment route | Indonesian payment gateway | MoR platform (Polar, Lemon Squeezy, and similar) | NOWPayments hosted invoice |
+| Name on the customer-facing transaction | Silverspoon | The MoR entity | Silverspoon |
+| Focus of transaction tax compliance | Silverspoon (Indonesian jurisdiction) | MoR plus the customer's country rules | Silverspoon |
+| Silverspoon's position | Domestic seller | Post-MoR revenue recipient, per contract | Domestic seller, crypto settlement rail |
+| Settlement | Per channel (H+2 / H+4) | Per MoR contract | H+0 once finished |
 
 ---
 
