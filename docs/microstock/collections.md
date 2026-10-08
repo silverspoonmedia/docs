@@ -9,7 +9,7 @@ sidebar_position: 2
 
 A collection is simply a folder inside a Microstock workspace. It is described once, locked, analyzed, and then curated. The folder's status tells you which step comes next, so you do not need to guess what the interface is feeling today.
 
-{/* TODO: screenshot static/assets/docs/microstock/collection-toolbar.webp */}
+{/* TODO: screenshot static/img/docs/microstock/collection-toolbar.webp */}
 
 ## Creating a collection and uploading
 

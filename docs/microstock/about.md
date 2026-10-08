@@ -11,7 +11,7 @@ Microstock takes a folder of images and produces the metadata a stock marketplac
 
 It is not a separate drive. Microstock runs on top of Archivd, inside a dedicated workspace of its own, so your uploads, quota, and file handling all come from the same place.
 
-{/* TODO: screenshot static/assets/docs/microstock/about-overview.webp */}
+{/* TODO: screenshot static/img/docs/microstock/about-overview.webp */}
 
 ## What it does
 

@@ -9,7 +9,7 @@ sidebar_position: 2
 
 This page covers the everyday work in Archivd: getting files in, keeping them tidy, finding them again, and cleaning up. In other words, the glamorous life of putting things in folders.
 
-{/* TODO: screenshot static/assets/docs/archivd/files-listing.webp */}
+{/* TODO: screenshot static/img/docs/archivd/files-listing.webp */}
 
 ## Browsing
 
