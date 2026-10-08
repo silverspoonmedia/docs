@@ -1,6 +1,6 @@
 # Agent context budget
 
-This repo is a peer root in all three Monolith workspaces (`Monolith-Backend`, `Monolith-SPA`, `Monolith-Fullstack`), so this `AGENTS.md` and its four always-on rules inject on **every** turn in those workspaces. Keep them small.
+This repo is a peer root in all three Monolith workspaces (`Monolith-Backend`, `Monolith-SPA`, `Monolith-Fullstack`), so this `AGENTS.md` and its five always-on rules inject on **every** turn in those workspaces. Keep them small.
 
 | Task | Open |
 |------|------|

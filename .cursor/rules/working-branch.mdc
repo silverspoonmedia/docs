@@ -1,0 +1,8 @@
+# Working branch (mandatory)
+
+Before the first edit of a task, run `git branch --show-current` in every repo you will touch. A directory that is not a git checkout needs nothing.
+
+- **Protected** (`main`, `master`, `main-*`) means the branch was forgotten — create `{type}/{slug}` first and work there: `git switch -c {type}/{slug}`, `type` in `feat|fix|chore|docs|refactor`, `slug` a short kebab summary of the task. Uncommitted work travels with the branch, so nothing is lost and no stash is needed. Never edit, commit, or push on a protected branch.
+- **Any other branch** means the user prepared it on purpose — work there; do not create another, do not switch away.
+
+One branch per repo, same slug across a multi-repo task; an existing `{type}/{slug}` is reused with `git switch`, never recreated. An explicit user instruction to stay on a protected branch wins — say so, then proceed. Report the branch you created in one line.
