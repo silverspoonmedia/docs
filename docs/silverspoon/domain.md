@@ -26,24 +26,25 @@ Silverspoon runs as a single platform that hosts multiple products. One canonica
 | Layer | Domain | Role |
 |-------|--------|------|
 | Platform | `silverspoon.me` | The canonical entry point for the whole platform and all products. |
-| Platform (static) | `static.silverspoon.me` | Public static assets such as images, video, CSS, and JS. |
-| System | `spnd.uk` | Infrastructure and email handling. Stands for "Silverspoon Daemon." |
+| Content delivery | `cdn.silverspoon.me` | Serves stored files and other public content. |
+| Upload gateway | `gateway.silverspoon.me` | Receives file uploads and serves downloads on behalf of the products. |
+| System | `spnd.uk` | The API and infrastructure domain. Stands for "Silverspoon Daemon." |
 
 ### `*.silverspoon.me`
 
 The canonical domain of the Silverspoon platform. Every product is served from a path underneath it.
 
 - Every product lives under `silverspoon.me`: public pages such as shared files at `silverspoon.me/s/*`, and the authenticated app at `silverspoon.me/apps/*`.
-- `static.silverspoon.me` handles public static assets such as images, video, CSS, or JS.
+- `gateway.silverspoon.me` and `s3.silverspoon.me` are the upload and download endpoints the products use, and `cdn.silverspoon.me` serves stored files and other public content.
 - All verified email contacts are handled through this domain name manually.
 - Every subdomain under `silverspoon.me`, such as `xxx.silverspoon.me`, is official.
 
 ### `*.spnd.uk`
 
-The system domain, used for infrastructure and email rather than for browsing.
+The system domain, used for the platform's API and for infrastructure and email rather than for browsing.
 
 - Stands for "Silverspoon Daemon."
-- Handles static content such as images, video, CSS, or JS for all services.
+- Serves the platform API, for example `monolith-api.spnd.uk`.
 - All unverified email contacts are handled through this domain name.
 - Every subdomain under `spnd.uk`, such as `xxx.spnd.uk`, is official.
 

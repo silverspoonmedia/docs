@@ -11,7 +11,7 @@ Two-factor authentication (2FA) adds a second step to sign-in. Alongside your pa
 
 The platform uses standard time-based codes (TOTP), the same kind produced by any authenticator app.
 
-{/* TODO: screenshot static/assets/docs/account/two-factor-setup.webp */}
+{/* TODO: screenshot static/img/docs/account/two-factor-setup.webp */}
 
 ## Setting it up
 

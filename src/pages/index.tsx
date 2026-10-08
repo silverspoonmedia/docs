@@ -30,11 +30,10 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Help Center"
+      description="Documentation and help for Silverspoon: Archivd file storage, Microstock image metadata, and the shared account, billing, notification, and legal surfaces.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

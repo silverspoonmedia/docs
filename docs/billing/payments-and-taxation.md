@@ -1,45 +1,39 @@
 ---
 title: Payments and Taxation
-description: How Silverspoon splits payment flows and tax obligations between Indonesian and international customers.
+description: How Silverspoon processes a payment and who carries the tax obligation on a purchase.
 sidebar_label: Payments & Tax
 sidebar_position: 4
 ---
 
 # Payments and Taxation
 
-This document explains **how the platform splits payment flows** and **who carries the tax obligation**, depending on the **location or status of the customer** relative to Indonesia.
+This document explains **how the platform processes a payment** and **who carries the tax obligation** on a purchase.
 
 :::info[Scope]
-The flows below assume the standard split: domestic transactions run through an Indonesian payment gateway, while international transactions run through a Merchant of Record. If internal policy differs, adjust this document accordingly.
+Every checkout runs through the platform's own configured payment gateways, and **Silverspoon is the seller of record on every transaction**. There is no separate international route through a Merchant of Record. For per-country transaction classification, rates, and concrete tax reporting, the details **must** be locked together with qualified tax and legal advisors.
 :::
 
-## 1. Customers in Indonesia
+## How a payment is processed
 
-When a transaction is made by **a customer within the Indonesian scope** (handled as a domestic transaction under product policy):
+Checkout is handled by the platform's configured Indonesian payment gateways — **Midtrans**, **Xendit**, **DOKU**, and **iPaymu** — selected per channel by the platform's own routing policy. You choose a payment channel, the invoice is created in Silverspoon's name, and the gateway confirms the result back to the platform before the purchase is fulfilled.
 
-- **Payment** is processed through an **Indonesian payment gateway**, and the transaction is **made in Silverspoon's name**. From the customer's point of view, Silverspoon appears as the seller and the party collecting payment, in line with the gateway configuration and contract.
-- **Taxation** on that domestic transaction is **handled by Silverspoon**, because Silverspoon is a **legal entity domiciled in Indonesia** and is responsible for the tax obligations attached to domestic sales under applicable regulations.
+- **Payment** is processed through one of those gateways, and the transaction is **made in Silverspoon's name**. From the customer's point of view, Silverspoon appears as the seller and the party collecting payment, in line with the gateway configuration and contract.
+- **Taxation** on the transaction is **handled by Silverspoon**, because Silverspoon is a **legal entity domiciled in Indonesia** and is responsible for the tax obligations attached to its sales under applicable regulations.
 
-**Why it works this way:** a domestic gateway plus an Indonesian entity keeps **cash flow**, **invoices and receipts**, and **sales or income tax obligations** inside a single Indonesian jurisdictional chain. There is no need to move the seller role to a foreign party for a transaction that is genuinely domestic.
+**Why it works this way:** a single Indonesian entity selling through Indonesian gateways keeps **cash flow**, **invoices and receipts**, and **sales or income tax obligations** inside a single jurisdictional chain. No part of the seller role is moved to a foreign party.
 
-## 2. Customers outside Indonesia (Merchant of Record flow)
+## Channel fees
 
-When a transaction is made by **a customer outside the Indonesian domestic scope**, such as an international customer, payment can be processed through a **MoR platform** such as **Polar** or **Lemon Squeezy**:
+A payment channel can carry a channel fee, and who bears it is platform policy rather than a per-invoice choice. The checkout page shows the split before you pay: the subtotal is the price of what you bought, the channel fee is the surcharge, and the total is what the gateway charges.
 
-- **Payment and consumer tax compliance in the customer's country** (VAT, GST, sales tax, relevant withholdings, and so on) are generally **handled by the MoR entity** in each country, according to that provider's capabilities and legal model.
-- **The transaction between the international customer and the MoR** is made **in the MoR entity's name**, **not** in Silverspoon's name as a direct seller to the end consumer at the MoR checkout layer.
-- **Silverspoon's tax obligation** on this path **does not replace** the tax already satisfied on the MoR side. What is reported and accounted for on Silverspoon's side is **tax on the income Silverspoon receives**, such as revenue share, fees, or settlement after the MoR deducts commission, transaction tax, and other costs under the MoR contract, **once** the tax obligations on the MoR side and in the relevant country have been met.
+## Summary
 
-**Why it works this way:** the MoR lends its **legal "skin"** as the seller of record to the consumer, so **invoicing and tax collection** follow the **consumer's country rules** and the **MoR's own terms**. Silverspoon is closer to a **net revenue recipient** in a B2B relationship with the MoR, and Indonesian tax on Silverspoon follows the **character of the income flowing into the Indonesian entity**, not the full gross checkout paid by an overseas customer.
-
-## Comparison summary
-
-| Aspect | Indonesia (Silverspoon direct) | International (MoR) |
-|--------|-------------------------------|---------------------|
-| Payment route | Indonesian payment gateway | MoR platform (Polar, Lemon Squeezy, and similar) |
-| Name on the customer-facing transaction | Silverspoon | The MoR entity |
-| Focus of transaction tax compliance | Silverspoon (Indonesian jurisdiction) | MoR plus the customer's country rules |
-| Silverspoon's position | Domestic seller | Post-MoR revenue recipient, per contract |
+| Aspect | How it works |
+|--------|--------------|
+| Payment route | The platform's configured Indonesian payment gateways (Midtrans, Xendit, DOKU, iPaymu) |
+| Name on the customer-facing transaction | Silverspoon |
+| Focus of transaction tax compliance | Silverspoon (Indonesian jurisdiction) |
+| Silverspoon's position | Seller of record |
 
 ---
 

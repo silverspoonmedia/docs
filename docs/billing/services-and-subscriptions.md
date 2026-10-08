@@ -9,7 +9,7 @@ sidebar_position: 2
 
 The **Services** catalog is where everything purchasable lives: storage plans, workspace slots, AI credit, and the add-ons that extend them. A tidy shelf for things you can buy; capitalism does love a menu.
 
-{/* TODO: screenshot static/assets/docs/billing/services-catalog.webp */}
+{/* TODO: screenshot static/img/docs/billing/services-catalog.webp */}
 
 ## What a catalog entry tells you
 
@@ -83,6 +83,5 @@ Each purchase has its own page at `/apps/service-purchases/{id}`, which is also 
 | Grace period | The period ended; renew to keep paid features. |
 | Expired | Back to the free tier. |
 | Cancelled | Ended early by request. |
-| Permanent | Does not expire. |
 
 When an entitlement enters grace, a banner appears on the purchase page and a notification is sent. Renewing during grace restores full access and prevents any trimming of stored data.

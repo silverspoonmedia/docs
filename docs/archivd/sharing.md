@@ -9,7 +9,7 @@ sidebar_position: 3
 
 Archivd sharing is link based. Mark a file or folder as shareable, and anyone holding the link can open it without an account. One link, one job, pleasantly little drama.
 
-{/* TODO: screenshot static/assets/docs/archivd/sharing-dialog.webp */}
+{/* TODO: screenshot static/img/docs/archivd/sharing-dialog.webp */}
 
 ## Visibility
 

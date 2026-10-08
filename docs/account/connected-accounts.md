@@ -9,7 +9,7 @@ sidebar_position: 4
 
 Connected accounts let Silverspoon read one small, specific piece of information from an external service, with your permission. Today the supported provider is **Discord**—the designated keeper of this particular list.
 
-{/* TODO: screenshot static/assets/docs/account/connected-accounts.webp */}
+{/* TODO: screenshot static/img/docs/account/connected-accounts.webp */}
 
 ## Why connect Discord
 

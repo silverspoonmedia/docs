@@ -11,7 +11,7 @@ Once a collection has been reviewed, you can take the metadata out. There are tw
 
 The CSV is the primary path. Marketplace upload is additive: it does not replace the CSV, and it never moves or deletes anything in your workspace.
 
-{/* TODO: screenshot static/assets/docs/microstock/export-toolbar.webp */}
+{/* TODO: screenshot static/img/docs/microstock/export-toolbar.webp */}
 
 ## Exporting the CSV
 

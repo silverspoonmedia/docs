@@ -9,7 +9,7 @@ sidebar_position: 5
 
 This page explains how much room you have, what happens when a plan ends, and where your files live. Quotas are not exciting, but neither is discovering one at the worst possible moment.
 
-{/* TODO: screenshot static/assets/docs/archivd/quota-bar.webp */}
+{/* TODO: screenshot static/img/docs/archivd/quota-bar.webp */}
 
 ## How your quota is calculated
 
@@ -61,12 +61,12 @@ The trim is automatic and irreversible. If a plan is about to end and you are ov
 
 ## Storage regions
 
-Archivd stores files in one or more regions. The two available today are:
+Archivd stores files in one or more regions. **Central European (`ce`)** is live. **United States (`us`)** is available as a region and becomes selectable once it is configured on the platform; until then, only `ce` appears in the upload dialog.
 
-| Region key | Label |
-|------------|-------|
-| `ce` | Central European |
-| `us` | United States |
+| Region key | Label | Status |
+|------------|-------|--------|
+| `ce` | Central European | Available |
+| `us` | United States | Available once configured |
 
 When more than one region is configured, a region column and a detail badge appear so you can see where a file was placed, and the upload dialog lets you choose the region for new files. A region can be closed for new uploads while files already stored there remain downloadable; only new uploads are blocked.
 

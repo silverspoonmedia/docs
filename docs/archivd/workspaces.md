@@ -11,7 +11,7 @@ A team workspace is a shared space for files more than one person needs to reach
 
 Team workspaces are the paid part of Archivd. The workspace is created and owned by a paid account, and its files count against that owner's storage quota, not against each member's personal allowance.
 
-{/* TODO: screenshot static/assets/docs/archivd/workspace-switcher.webp */}
+{/* TODO: screenshot static/img/docs/archivd/workspace-switcher.webp */}
 
 ## What free and paid accounts can do
 

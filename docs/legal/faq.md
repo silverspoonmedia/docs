@@ -23,27 +23,22 @@ There is always the possibility of bringing in additional team members in the fu
 
 ## Is this platform free to use?
 
-Currently, all the features offered by our projects are available for free, allowing users to take full advantage of what the projects provide without any cost. However, in the future, there may be certain features accessible only through a one-time purchase or a subscription fee.
+No. Every account gets a free allowance, and paid services stack on top of it rather than replacing it.
 
-Even though "offering all features for free" looks generous, considering that development, maintenance, and operations incur enormous costs, it becomes essential to explore healthy and sustainable business models.
+- **Archivd** includes a free storage allowance with every account. Paid storage plans and stackable add-ons extend it, and a team workspace slot add-on adds collaborative workspaces.
+- **Microstock** activates free with one built-in workspace slot. Extra workspace slots and prepaid AI analysis credits are paid.
 
-We do not wish to adopt a "burning money" strategy either, which has proven unsustainable. Hence these projects are not 100% free.
+Development, maintenance, and operations cost real money, so the platform is not 100% free and does not run on a "burning money" strategy. The free allowance is part of every account rather than a trial; only the paid tiers are commercialized.
 
-Nevertheless, the core features will remain free and will not be commercialized, as our main commitment is to ensure all users have access to essential functionality without any cost.
-
-We will only commercialize additional or cosmetic features, which allows us to enhance the user experience without compromising the core functionality of our services.
-
-For how paid features are billed and taxed, see [Payments and Taxation](/docs/billing/payments-and-taxation).
+For how paid services are billed and taxed, see [Payments and Taxation](/docs/billing/payments-and-taxation).
 
 ## Will there be multilingual support?
 
-That is the initial plan. To optimize development time, the focus will be on adding languages predominantly used by users from countries where our products are most frequently used.
+Multilingual support has shipped. The interface is available in seven languages — English, Indonesian, Japanese, Korean, Simplified Chinese, Arabic, and Russian — and a selector in the top bar switches your preference, which is remembered on your account.
 
-By prioritizing these languages, we aim to enhance accessibility and user experience for the core audience.
+The set of languages is deliberate rather than automatic: a language is added when there is a real audience for it.
 
-Given the limited number of team members working on these projects, translation tools and AI assistance may be used to ensure grammatical accuracy during the translation process.
-
-If you are interested in contributing, your involvement could be incredibly beneficial. Collaborating with others who share a passion for these projects can enhance the quality of our translations and ensure we capture the nuances of each language effectively.
+If a translation reads wrong on the screen where it appears, report it, and it will be corrected.
 
 ## Are the services down?
 

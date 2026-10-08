@@ -11,7 +11,7 @@ Archivd is Silverspoon's file storage product: a lightweight drive for keeping, 
 
 It is deliberately simple. If you have used a cloud drive before, everything here should feel familiar: folders, drag and drop, a trash bin, and shareable links. No labyrinth, no ritual sacrifice, no mysterious button that only works on Tuesdays.
 
-{/* TODO: screenshot static/assets/docs/archivd/about-overview.webp */}
+{/* TODO: screenshot static/img/docs/archivd/about-overview.webp */}
 
 ## What you get
 
