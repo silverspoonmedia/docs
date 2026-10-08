@@ -17,23 +17,24 @@ Some products integrate third-party platforms that come with their own privacy r
 
 When you access the platform, we use cookies or similar technologies to collect information about your use and store your preferences. Our primary purpose in collecting this information is to provide optimized and relevant services to you, including but not limited to:
 
-- Content personalization to adjust your content feeds, such as timezone display or customized content sorting that is saved to your browser cookies for a short period of time.
+- Interface preferences such as timezone display and list sorting, saved to your browser cookies for a short period of time.
 
 You can control or delete cookies as you wish. Most web browsers allow you to set your cookie preferences through the settings menu of the web browser you use.
 
 ## Information We Collect
 
-When you use the platform, especially when submitting additions and/or changes to creator data, we collect some information that you provide voluntarily, including but not limited to:
+When you use the platform, we collect the information you provide voluntarily, including but not limited to:
 
-- Link to the creator's channel for which data is added and/or changed,
-- Link to the creator's public content (VOD, live streaming and/or archived video) for which data is added and/or changed,
-- Creator profiles that can be accessed publicly and disseminated directly by the creator or the official party that oversees the creator.
+- Account details such as your name, email address, and language preference,
+- The files, folders, and workspaces you create in Archivd, along with the metadata you attach to them,
+- The image metadata, collections, and export records you create in Microstock,
+- Messages you send to us through a support or contact channel.
 
-This information can be managed by you or your appointed representative.
+You can review, correct, or remove this information yourself from the product that holds it, or by contacting us.
 
 ## How We Use Your Information
 
-We use the information we collect to provide information about Content Creators, including but not limited to streaming schedules, profiles and statistics. We use this information only for profiling and statistical purposes of the Content Creator itself.
+We use the information we collect to operate the platform: to store and serve your files, to run the products you have activated, to keep your account and preferences working across sessions, to process paid services, and to send the account messages and notifications described in this policy.
 
 ## Control of your data
 
@@ -54,7 +55,7 @@ A valid email address is required for services that require registration. We use
 We integrate these third-party services into our platform which serve as extra security and additional optimization:
 
 - [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy)
-- [HCaptcha Privacy Policy](https://www.hcaptcha.com/privac)
+- [HCaptcha Privacy Policy](https://www.hcaptcha.com/privacy-policy)
 
 By using our services, you also agree and are bound by their privacy policy.
 
