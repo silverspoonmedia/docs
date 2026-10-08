@@ -9,7 +9,7 @@ sidebar_position: 2
 
 Silverspoon tells you when something affects you: a plan entering grace, an account change, or another event worth your attention. Notifications arrive in the top-bar bell and stay in your history, because apparently memory is not a platform feature.
 
-{/* TODO: screenshot static/assets/docs/account/notifications-bell.webp */}
+{/* TODO: screenshot static/img/docs/account/notifications-bell.webp */}
 
 ## The bell
 
@@ -36,7 +36,7 @@ Notifications cover the things worth knowing about rather than everything that h
 
 - **Billing.** When a subscription enters its grace period, and when it expires. These are the ones to act on, because grace is your window to renew.
 - **Your account.** When details on your account are changed.
-- **Product activity.** Events specific to the products you use, such as a claim or a shared item you are involved in.
+- **Product activity.** Events raised by the products you operate, such as an AI model that is being used for inference but is not yet in the catalog, which is billed at provisional rates until someone classifies it.
 
 Some notifications are addressed to you personally, and others go to everyone who holds a particular role. Either way, you only ever see the ones meant for you.
 
