@@ -31,12 +31,12 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Project and guides',
+    title: 'Project',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Who we are, the domains we operate, and practical walkthroughs for
-        external matters.
+        Who runs the platform, how to reach them, and the official domains
+        Silverspoon operates.
       </>
     ),
   },
