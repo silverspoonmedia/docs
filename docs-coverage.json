@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "Capability -> page manifest: the claim that every shipped user-facing capability has a page. `source` names the code that owns the behavior. `npm run check:docs` fails when a page does not exist, is not reachable from sidebars.ts, or when a `kind => 'product'` domain in monolith/config/domains.php has no `product.<kebab>` entry.",
+  "note": "Capability -> page manifest: the claim that every shipped user-facing capability has a page. `source` is an owning-area label, not a filesystem path: it is the `monolith` code path when code owns the behavior (`monolith/app/Domain/**`), and an owning-area label (`silverspoon/platform`, `silverspoon/finance`, `silverspoon/legal`) when the page documents policy, brand, or infrastructure that no single code path owns. `npm run check:docs` fails when a page does not exist, is not reachable from sidebars.ts, or when a `kind => 'product'` domain in monolith/config/domains.php has no `product.<kebab>` entry.",
   "capabilities": {
     "platform.introduction": { "page": "docs/intro.md", "source": "silverspoon/platform" },
 

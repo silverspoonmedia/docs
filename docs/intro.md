@@ -15,7 +15,7 @@ Before you dive into the details, here is a quick introduction to who I am. It s
 
 Silverspoon is a collection of products created and maintained by **Waka** (an initial, not a legal name). Most applications are built single-handedly, which is an efficient way to keep meetings short and bug reports emotionally personal.
 
-All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each product lives under its own path, such as `silverspoon.me/archivd`. The capabilities that every product shares, such as authentication and billing, live in one core layer that products build on.
+All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each product lives under its own path, such as `silverspoon.me/apps/archivd`. The capabilities that every product shares, such as authentication and billing, live in one core layer that products build on.
 
 Most products are published on the internet and can be used publicly. The codebase is mostly closed source, though several open source projects may appear in the future.
 
@@ -75,7 +75,6 @@ This documentation is organized around how the platform is built:
 - **Products** covers each product's features and how to use them: Archivd and Microstock.
 - **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
 - **Project** covers who I am and the official domains Silverspoon operates.
-- **Guides** covers practical walkthroughs for external matters.
 
 ## Closing
 
