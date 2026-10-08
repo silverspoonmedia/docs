@@ -1,8 +1,0 @@
-{
-  "label": "Account Manager",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Manage your identity on vTual: avatar, biodata, content, gender, handler, language, external links, and persona."
-  }
-}

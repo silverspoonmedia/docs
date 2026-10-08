@@ -33,8 +33,7 @@ Silverspoon runs as a single platform that hosts multiple products. One canonica
 
 The canonical domain of the Silverspoon platform. Every product is served from a path underneath it.
 
-- Product entry points:
-  - `silverspoon.me/vtual` - the vTual project.
+- Every product lives under `silverspoon.me`: public pages such as shared files at `silverspoon.me/s/*`, and the authenticated app at `silverspoon.me/apps/*`.
 - `static.silverspoon.me` handles public static assets such as images, video, CSS, or JS.
 - All verified email contacts are handled through this domain name manually.
 - Every subdomain under `silverspoon.me`, such as `xxx.silverspoon.me`, is official.
@@ -50,17 +49,12 @@ The system domain, used for infrastructure and email rather than for browsing.
 
 ## Legacy domains
 
-Some products previously ran on their own dedicated domains. That is no longer the case: each product now lives under `silverspoon.me`, and the legacy domain exists only to forward visitors to the canonical location.
+Some projects previously ran on their own dedicated domains. That is no longer the case: each product now lives under `silverspoon.me`. Silverspoon still owns the legacy domains below.
 
 ### `*.vtual.net`
 
-- Formerly the main domain of the vTual project.
-- Now redirects to `silverspoon.me/vtual`.
-- Transactional email related to vTual, such as email verification, password reset, and claims, is still sent from this domain. Verify that the email you received was indeed sent from the address below to avoid potential fraud:
-  - `noreply@vtual.net` - Active since January 2025.
-- The CDN hostnames below remain in use for asset delivery:
-  - `cdn.vtual.net` for general documents that can be accessed by the public.
-  - `cdns.vtual.net` for private documents that can only be accessed through a series of mechanisms.
+- Formerly the dedicated domain of the vTual project, which Silverspoon has retired. It is no longer a product surface.
+- The domain itself is still owned and operated by Silverspoon, so it remains a legitimate source of Silverspoon communication, including email.
 - Every subdomain under `vtual.net`, such as `xxx.vtual.net`, is official.
 
 ## Imitations

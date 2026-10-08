@@ -11,7 +11,7 @@ Welcome to Silverspoon. There are several ways to reach Silverspoon, so pick whi
 
 ## General inquiries
 
-For questions or concerns about Silverspoon products and services, reach out any time. You can send a direct message or mention Silverspoon on [Twitter](https://www.vtual.net/go/twitter).
+For questions or concerns about Silverspoon products and services, reach out any time. You can send a direct message or mention Silverspoon on Twitter.
 
 When the situation allows, I plan to open a Discord server as well. It will be an ideal place for support, feedback, or simply connecting with others who share your interests. I hope to see you there.
 

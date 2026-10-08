@@ -15,7 +15,6 @@ A user-facing capability that ships without a page is **not shipped** — the cu
 | Notification bell, audiences, read state | `docs/notifications.md` |
 | `PaymentGateway`, invoices, subscriptions, service catalog, refunds | `docs/billing/*` |
 | `Archivd` — files, folders, sharing, trash, storage, workspaces | `docs/archivd/*` |
-| `Vtual` — home, creator profile, account manager, simp, legal | `docs/vtual/*` |
 | `Microstock` — collections, credits, export, marketplace upload | `docs/microstock/*` |
 | Locale list, RTL behavior | `docs/account/index.md` (Language), `docs/intro.md` |
 | Domain, static host, email sender, legacy redirects | `docs/silverspoon/domain.md` |

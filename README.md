@@ -1,6 +1,6 @@
 # Silverspoon Docs
 
-The user-facing documentation site for the Silverspoon platform — the customer's manual for vTual, Archivd, Microstock, and the shared account, billing, notification, and legal surfaces. Built with [Docusaurus](https://docusaurus.io/) 3 and published at `https://help.silverspoon.me`.
+The user-facing documentation site for the Silverspoon platform — the customer's manual for Archivd, Microstock, and the shared account, billing, notification, and legal surfaces. Built with [Docusaurus](https://docusaurus.io/) 3 and published at `https://help.silverspoon.me`.
 
 Every page under `docs/` is read by a customer, not by an agent. Agent pakem for this repo lives in [`.cursor/rules/`](.cursor/rules/) with the map in [`AGENTS.md`](AGENTS.md); `docs-coverage.json` is the machine-checked claim that every shipped user-facing capability has a page.
 

@@ -59,7 +59,7 @@ This page keeps you informed and provides transparency about any issues that may
 
 ### Ping result
 
-Another tool you can use to check the status of a product's services is a ping result, such as [our ping result](https://ping.pe/www.vtual.net) for vTual. This platform provides real-time ping results for the product from various Internet Service Providers (ISPs) across different countries and continents.
+Another tool you can use to check the status of a product's services is a ping result. Public ping services provide real-time results for a hostname from Internet Service Providers (ISPs) across different countries and continents, which tells you how reachable the service is from where you are.
 
 By using this tool, you gain valuable insight into the accessibility and performance of our services from various locations, helping you understand how well the service is functioning in your area and beyond. This additional resource can be particularly useful for troubleshooting and assessing connectivity issues between your localhost and the service.
 
@@ -85,4 +85,4 @@ That said, it is also essential to balance dreams with a reality check. If we re
 
 Feel free to ask any questions, and we will respond here so that others can benefit from the information as well. This is a great way to share knowledge and ensure everyone has access to the answers they may be seeking.
 
-Looking for something specific to a product? Each product keeps its own FAQ, such as the [vTual FAQ](/docs/vtual/legal/faq).
+Looking for something specific to a product? Start from that product's documentation under **Products** in the sidebar. A product that publishes its own FAQ links it from there.

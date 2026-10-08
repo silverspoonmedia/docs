@@ -95,11 +95,6 @@ const config: Config = {
           items: [
             {
               type: 'doc',
-              docId: 'vtual/about',
-              label: 'vTual',
-            },
-            {
-              type: 'doc',
               docId: 'archivd/about',
               label: 'Archivd',
             },
@@ -118,10 +113,6 @@ const config: Config = {
         {
           title: 'Products',
           items: [
-            {
-              label: 'vTual',
-              to: '/docs/vtual/about',
-            },
             {
               label: 'Archivd',
               to: '/docs/archivd/about',
