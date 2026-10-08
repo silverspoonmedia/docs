@@ -5,7 +5,7 @@ Default is `[content]` when no tag is given. The tag affects **layer coverage on
 | Tag | Touch |
 |-----|-------|
 | `[content]` | Pages under `docs/**` only: new page, rewrite, corrected copy. Default. |
-| `[site]` | `sidebars.ts`, `docusaurus.config.ts`, `src/**` theme and components, `static/**`, `blog/**` |
+| `[site]` | `sidebars.ts`, `docusaurus.config.ts`, `src/**` theme and components, `static/**` |
 | `[cross-repo]` | A page documents behavior that changed in `monolith` or `monolith-vue-workers` — the code and the page land in the same task |
 
 ## `[cross-repo]` layer table

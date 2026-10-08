@@ -1,6 +1,6 @@
 ---
 description: Docusaurus page shape, navigation and content rules
-globs: docs/**,sidebars.ts,docusaurus.config.ts,src/**,blog/**,static/**
+globs: docs/**,sidebars.ts,docusaurus.config.ts,src/**,static/**
 alwaysApply: false
 ---
 
