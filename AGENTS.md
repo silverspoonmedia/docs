@@ -22,6 +22,7 @@
 | `docs-sync.mdc` *(always-on)* | Shipping a user-facing capability in a sibling repo |
 | `task-scope.mdc` *(always-on)* | Deciding which layers a task must touch |
 | `context-budget.mdc` *(always-on)* | Choosing what to open for a task |
+| `working-branch.mdc` *(always-on)* | Before the first edit — never work on a protected branch |
 | `docs-content.mdc` | `docs/**`, `sidebars.ts`, `docusaurus.config.ts`, theme — page shape and navigation |
 | `docs-tone.mdc` | `docs/**` — English playful voice and legal-tone boundaries |
 
