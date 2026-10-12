@@ -1,6 +1,6 @@
 ---
 title: Connected Accounts
-description: Link your Discord account to Silverspoon and sync the YouTube and Twitch accounts it carries.
+description: Link your Discord account to Silverspoon and sync the accounts it carries.
 sidebar_label: Connected Accounts
 sidebar_position: 4
 ---
@@ -13,7 +13,7 @@ Connected accounts let Silverspoon read one small, specific piece of information
 
 ## Why connect Discord
 
-Your Discord profile already carries the YouTube and Twitch accounts you have linked there. Connecting Discord lets Silverspoon read that list, so the platforms you use show up in one place instead of you typing them in by hand.
+Your Discord profile already carries the accounts you have linked there — YouTube and Twitch among them. Connecting Discord lets Silverspoon read that list, so the platforms you use show up in one place instead of you typing them in by hand.
 
 ## Connecting
 
@@ -26,7 +26,7 @@ If you cancel the authorization on Discord, nothing changes and you can try agai
 
 ## Linked platforms
 
-Once Discord is connected, the page lists the YouTube and Twitch accounts found on your Discord profile, each with a status:
+Once Discord is connected, the page lists the accounts found on your Discord profile, each with a status:
 
 | Status | Meaning |
 |--------|---------|
