@@ -17,7 +17,7 @@ This section covers the parts of your account that are shared platform-wide. Pro
 |------|--------|
 | [Registration and Login](/docs/account/registration-and-login) | Creating an account, verifying your email, signing in, and signing out. |
 | [Two-Factor Authentication](/docs/account/two-factor-authentication) | Adding an authenticator app as a second step at sign-in. |
-| [Connected Accounts](/docs/account/connected-accounts) | Linking Discord, and the YouTube and Twitch accounts it carries. |
+| [Connected Accounts](/docs/account/connected-accounts) | Linking Discord, and the accounts it carries. |
 | [Password and Recovery](/docs/account/password-and-recovery) | Changing your password and recovering access if you forget it. |
 
 ## Where these settings live
