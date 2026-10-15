@@ -60,6 +60,14 @@ Everyone gets a personal drive with nested folders, chunked uploads, a trash bin
 
 Start with the [Archivd documentation](/docs/archivd/about).
 
+### Suar
+
+Suar is the creator catalogue: profiles, the YouTube and Twitch channels bound to them, and the claims that prove ownership. Content flows in from the platforms, and a claimant proves a profile is theirs by putting a token in a channel bio.
+
+It is an internal tool rather than a public directory. Every screen needs a signed-in account with Suar active, and the platform plumbing — the credential manager, the API probe, and the fetch engine — is reserved for staff.
+
+Start with the [Suar documentation](/docs/suar/about).
+
 ### Microstock
 
 Microstock turns a folder of images into the metadata a stock marketplace expects: titles, descriptions, categories, and keywords. The drafting is done by AI, and you review and curate the result before exporting.
@@ -72,7 +80,7 @@ Start with the [Microstock documentation](/docs/microstock/about).
 
 This documentation is organized around how the platform is built:
 
-- **Products** covers each product's features and how to use them: Archivd and Microstock.
+- **Products** covers each product's features and how to use them: Archivd, Suar, and Microstock.
 - **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
 - **Project** covers who I am and the official domains Silverspoon operates.
 

@@ -29,6 +29,15 @@
     "microstock.credits-and-usage": { "page": "docs/microstock/credits-and-usage.md", "source": "monolith/app/Domain/Microstock" },
     "microstock.export-and-upload": { "page": "docs/microstock/export-and-upload.md", "source": "monolith/app/Domain/Microstock" },
 
+    "product.suar": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
+    "suar.creators": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
+    "suar.claims": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
+    "suar.managements": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
+    "suar.events": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
+    "suar.credentials": { "page": "docs/suar/credentials.md", "source": "monolith/app/Domain/Suar" },
+    "suar.api-probe": { "page": "docs/suar/probe.md", "source": "monolith/app/Domain/Suar" },
+    "suar.fetch-engine": { "page": "docs/suar/fetch-engine.md", "source": "monolith/app/Domain/Suar" },
+
     "legal.overview": { "page": "docs/legal/index.md", "source": "silverspoon/legal" },
     "legal.terms": { "page": "docs/legal/terms.md", "source": "silverspoon/legal" },
     "legal.privacy": { "page": "docs/legal/privacy.md", "source": "silverspoon/legal" },
@@ -46,6 +55,9 @@
     "domain-access.visibility": "Admin-only product visibility gate — operators only.",
     "payment-gateway.channels": "Admin-only payment channel configuration — operators only.",
     "product-activations.registry": "Admin-only activation registry — operators only.",
-    "settings.platform": "Admin-only runtime settings editor — operators only."
+    "settings.platform": "Admin-only runtime settings editor — operators only.",
+    "suar.orphans": "Staff-only orphan queue for claimable profiles — Root/Admin/Moderator, not a customer surface.",
+    "suar.incidents": "Staff-only integration incident triage queue — Root/Admin operators only.",
+    "settings.suar": "Admin-only Suar settings group — operators only."
   }
 }

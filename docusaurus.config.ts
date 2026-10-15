@@ -84,6 +84,11 @@ const config: Config = {
             },
             {
               type: 'doc',
+              docId: 'suar/about',
+              label: 'Suar',
+            },
+            {
+              type: 'doc',
               docId: 'microstock/about',
               label: 'Microstock',
             },
@@ -100,6 +105,10 @@ const config: Config = {
             {
               label: 'Archivd',
               to: '/docs/archivd/about',
+            },
+            {
+              label: 'Suar',
+              to: '/docs/suar/about',
             },
             {
               label: 'Microstock',
