@@ -9,11 +9,11 @@ sidebar_position: 2
 
 The Suar fetch engine reads YouTube and Twitch on your behalf, and every one of those reads needs a key. **Platform credentials** is where those keys are stored, one set per platform, and where you test them without writing a single line of code.
 
-This is a staff screen, gated to the Root and Admin roles. If the menu entry is not there, your account does not carry the permission.
+This is a staff screen, gated to the Root and Admin roles. If the menu entry is not there, your account does not carry the permission — and typing the address by hand gets you a **403 page**, not the screen.
 
 ## Opening it
 
-Go to **Suar → Platform credentials**. The list shows one row per platform — its name, its key, whether it is enabled, and how many credentials it holds in each state. Open a platform to see and manage its credentials.
+Go to **Administration → Suar → Platform credentials**. The list shows one row per platform — its name, its key, whether it is enabled, and how many credentials it holds in each state. Open a platform to see and manage its credentials.
 
 ## Adding a credential
 

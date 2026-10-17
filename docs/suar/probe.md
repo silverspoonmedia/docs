@@ -9,11 +9,11 @@ sidebar_position: 3
 
 The **API probe** lets staff run the exact platform calls the Suar workers make, one at a time, and read back what the platform returned. It is the debugging dial for the fetch engine: when content is missing or stale, the probe tells you whether the platform is answering, what it is answering with, and whether the classification Suar would apply line up.
 
-It is a staff screen for the Root and Admin roles.
+It is a staff screen for the Root and Admin roles. Opening the address without that permission shows a **403 page** rather than the form.
 
 ## Opening it
 
-Go to **Suar → Platform credentials** and choose **Probe** in the header, or open a platform and jump from there. The probe is one form: pick a platform, pick a method, fill the fields that method needs, and run.
+Go to **Administration → Suar → Platform credentials** and choose **Probe** in the header, or open a platform and jump from there. The probe is one form: pick a platform, pick a method, fill the fields that method needs, and run.
 
 ## Platforms and methods
 
