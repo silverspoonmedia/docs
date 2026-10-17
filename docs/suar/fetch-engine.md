@@ -64,6 +64,8 @@ Because the hooks run inside activation, there is no path that activates a chann
 
 A platform failure does not surface as a stack trace. It is recorded as an **incident** — one row per distinct problem, with an occurrence count — and the failing pool row is marked and skipped. The incident queue is where "this integration is broken" lives, and recording can be silenced during a platform-wide outage so a single bad afternoon does not create thousands of rows.
 
+You will find it in the sidebar under **Administration → Monitoring → Suar incidents**, next to **Activity log** and **Error log**. That is deliberate: triage is an operator task, so the queue sits with the other monitoring tools rather than with Suar's own screens.
+
 If an integration looks quiet, the order to check is: the credential for that platform (see [Platform credentials](/docs/suar/credentials)), then a manual call (see [API probe](/docs/suar/probe)), then the incident queue.
 
 ## Related

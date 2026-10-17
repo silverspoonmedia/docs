@@ -31,9 +31,6 @@
 
     "product.suar": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
     "suar.creators": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
-    "suar.claims": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
-    "suar.managements": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
-    "suar.events": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
     "suar.credentials": { "page": "docs/suar/credentials.md", "source": "monolith/app/Domain/Suar" },
     "suar.api-probe": { "page": "docs/suar/probe.md", "source": "monolith/app/Domain/Suar" },
     "suar.fetch-engine": { "page": "docs/suar/fetch-engine.md", "source": "monolith/app/Domain/Suar" },
@@ -56,7 +53,6 @@
     "payment-gateway.channels": "Admin-only payment channel configuration — operators only.",
     "product-activations.registry": "Admin-only activation registry — operators only.",
     "settings.platform": "Admin-only runtime settings editor — operators only.",
-    "suar.orphans": "Staff-only orphan queue for claimable profiles — Root/Admin/Moderator, not a customer surface.",
     "suar.incidents": "Staff-only integration incident triage queue — Root/Admin operators only.",
     "settings.suar": "Admin-only Suar settings group — operators only."
   }

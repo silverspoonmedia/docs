@@ -62,7 +62,7 @@ Start with the [Archivd documentation](/docs/archivd/about).
 
 ### Suar
 
-Suar is the creator catalogue: profiles, the YouTube and Twitch channels bound to them, and the claims that prove ownership. Content flows in from the platforms, and a claimant proves a profile is theirs by putting a token in a channel bio.
+Suar is the creator catalogue: profiles, the YouTube and Twitch channels bound to them, and the content that flows in from those platforms. Staff create the profiles and register the channels; everyone else reaches a profile through a role on it.
 
 It is an internal tool rather than a public directory. Every screen needs a signed-in account with Suar active, and the platform plumbing — the credential manager, the API probe, and the fetch engine — is reserved for staff.
 
