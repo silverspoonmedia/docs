@@ -2,7 +2,7 @@
 title: Platform credentials
 description: Store and test the YouTube and Twitch API keys the Suar fetch engine runs on.
 sidebar_label: Platform credentials
-sidebar_position: 2
+sidebar_position: 6
 ---
 
 # Platform credentials

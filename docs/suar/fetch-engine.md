@@ -2,7 +2,7 @@
 title: Fetch engine
 description: How Suar pulls channels and content from YouTube and Twitch, and how that data stays fresh.
 sidebar_label: Fetch engine
-sidebar_position: 4
+sidebar_position: 8
 ---
 
 # Fetch engine
@@ -24,8 +24,7 @@ The split is about quota. YouTube accepts 50 ids per request and Twitch accepts 
 |------|---------------|-----------------|
 | Channel snapshot | Channels due for a profile refresh. | 50 rows, or the oldest waiting 15 minutes. |
 | Content hydrate | Video and stream ids waiting for full detail. | 50 rows, or the oldest waiting 15 minutes. |
-| Claim verification | Claims waiting for their bio token to be checked. | Strictly on the threshold — a claim is not rushed through on its own. |
-| Channel registration | Pending channels staff queued for binding. | Same threshold, tracked per platform. |
+| Channel registration | Sources waiting for their profile input to resolve — staff registrations and user monitoring submissions alike. | Same threshold, tracked per platform. |
 
 Flushing is locked, so two runs cannot fetch the same ids twice. A row that fails is marked failed and the run continues rather than aborting — a single bad id does not stall the batch.
 
@@ -59,6 +58,8 @@ Turning a pending channel into an active one is a single step that runs its foll
 - Twitch — subscribe to EventSub.
 
 Because the hooks run inside activation, there is no path that activates a channel without also wiring up its subscriptions.
+
+A source is global, so resolution can land on an id another row already owns — two users submitting a handle, a link, and a raw id all converge. That is not an error: the watchers and content of the speculative row move to the canonical one, and the empty row is discarded. Nobody's subscription is stranded on a row that can never activate.
 
 ## When something breaks
 

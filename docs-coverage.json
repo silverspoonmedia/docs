@@ -31,6 +31,10 @@
 
     "product.suar": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
     "suar.creators": { "page": "docs/suar/about.md", "source": "monolith/app/Domain/Suar" },
+    "suar.monitoring": { "page": "docs/suar/monitoring.md", "source": "monolith/app/Domain/Suar" },
+    "suar.premium": { "page": "docs/suar/premium.md", "source": "monolith/app/Domain/Suar" },
+    "suar.tracking": { "page": "docs/suar/tracking.md", "source": "monolith/app/Domain/Suar" },
+    "suar.directory": { "page": "docs/suar/directory.md", "source": "monolith/app/Domain/Suar" },
     "suar.credentials": { "page": "docs/suar/credentials.md", "source": "monolith/app/Domain/Suar" },
     "suar.api-probe": { "page": "docs/suar/probe.md", "source": "monolith/app/Domain/Suar" },
     "suar.fetch-engine": { "page": "docs/suar/fetch-engine.md", "source": "monolith/app/Domain/Suar" },

@@ -2,7 +2,7 @@
 title: API probe
 description: Run Suar's platform calls by hand against YouTube and Twitch and read the raw response.
 sidebar_label: API probe
-sidebar_position: 3
+sidebar_position: 7
 ---
 
 # API probe
