@@ -17,7 +17,7 @@ A user-facing capability that ships without a page is **not shipped** — the cu
 | Domain, static host, email sender, legacy redirects | `docs/silverspoon/domain.md` |
 | Terms, privacy, FAQ, jurisdiction | `docs/legal/*` |
 | Support, abuse, legal correspondence routing | `docs/silverspoon/contact.md` |
-| Platform narrative, product list, team, jurisdiction | `docs/intro.md` |
+| Platform narrative, domain list, team, jurisdiction | `docs/intro.md` |
 | A new user-facing SPA route in `monolith/config/spa-routes.php` | the page that owns that screen |
 
 ## The manifest
@@ -38,7 +38,7 @@ A user-facing capability that ships without a page is **not shipped** — the cu
 
 - Add an entry in the same task as the page. `npm run check:docs` fails on an entry whose page is missing or not in the sidebar.
 - A **waiver** is the last resort for a capability that is deliberately undocumented (internal/admin-only), every entry carries a reason, and a waiver whose capability now has a page is itself a finding — the list can only shrink.
-- Every product domain in `monolith/config/domains.php` needs a `product.{kebab}` entry when product domains exist. That check is cross-repo and reported *unverified* when the sibling checkout is absent.
+- Every added domain in `monolith/config/domains.php` (every name not in `DomainManager::PLATFORM_CORE`) needs a `domain.{kebab}` entry. That check is cross-repo and reported *unverified* when the sibling checkout is absent.
 
 ## Never
 

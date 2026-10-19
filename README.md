@@ -1,6 +1,6 @@
 # Silverspoon Docs
 
-The user-facing documentation site for the Silverspoon platform — the customer's manual for the shared account, notification, and legal surfaces. Built with [Docusaurus](https://docusaurus.io/) 3 and published at `https://help.silverspoon.me`.
+The user-facing documentation site for the Silverspoon platform — the operator's manual for the account, notification, audit, currency, and legal surfaces. Built with [Docusaurus](https://docusaurus.io/) 3 and published at `https://help.silverspoon.me`.
 
 Every page under `docs/` is read by a customer, not by an agent. Agent pakem for this repo lives in [`.cursor/rules/`](.cursor/rules/) with the map in [`AGENTS.md`](AGENTS.md); `docs-coverage.json` is the machine-checked claim that every shipped user-facing capability has a page.
 
@@ -21,7 +21,7 @@ npm run typecheck
 npm run build        # onBrokenLinks + onBrokenAnchors both throw
 ```
 
-`check:docs` reads the sibling `monolith` checkout for the product-domain claim. CI checks out this repo alone, so that one claim is reported as *unverified* there — run the guard from a machine with both checkouts when a product is added or removed.
+`check:docs` reads the sibling `monolith` checkout for the added-domain claim. CI checks out this repo alone, so that one claim is reported as *unverified* there — run the guard from a machine with both checkouts when a domain is added or removed.
 
 ## Deployment
 
