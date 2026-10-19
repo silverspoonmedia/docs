@@ -85,10 +85,6 @@ const config: Config = {
               to: '/docs/account/',
             },
             {
-              label: 'Billing & Subscriptions',
-              to: '/docs/billing/',
-            },
-            {
               label: 'Notifications',
               to: '/docs/notifications',
             },

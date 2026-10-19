@@ -13,15 +13,11 @@ A user-facing capability that ships without a page is **not shipped** — the cu
 |------------|---------------------|
 | `Identity` — registration, login, 2FA, password, connected accounts | `docs/account/*` |
 | Notification bell, audiences, read state | `docs/notifications.md` |
-| `PaymentGateway`, invoices, subscriptions, service catalog, refunds | `docs/billing/*` |
-| `Archivd` — files, folders, sharing, trash, storage, workspaces | `docs/archivd/*` |
-| `Microstock` — collections, credits, export, marketplace upload | `docs/microstock/*` |
 | Locale list, RTL behavior | `docs/account/index.md` (Language), `docs/intro.md` |
 | Domain, static host, email sender, legacy redirects | `docs/silverspoon/domain.md` |
 | Terms, privacy, FAQ, jurisdiction | `docs/legal/*` |
 | Support, abuse, legal correspondence routing | `docs/silverspoon/contact.md` |
 | Platform narrative, product list, team, jurisdiction | `docs/intro.md` |
-| A new product domain in `monolith/config/domains.php` (`kind => 'product'`) | `docs/{kebab}/about.md` + a `sidebars.ts` group + navbar/footer entries + a `docs-coverage.json` entry |
 | A new user-facing SPA route in `monolith/config/spa-routes.php` | the page that owns that screen |
 
 ## The manifest
@@ -32,17 +28,17 @@ A user-facing capability that ships without a page is **not shipped** — the cu
 {
   "version": 1,
   "capabilities": {
-    "archivd.sharing": { "page": "docs/archivd/sharing.md", "source": "monolith/app/Domain/Archivd" }
+    "account.connected-accounts": { "page": "docs/account/connected-accounts.md", "source": "monolith/app/Domain/Identity" }
   },
   "waivers": {
-    "inference.usage": "Admin-only surface — not a customer-facing capability."
+    "currency.catalog": "Admin-only surface — not a customer-facing capability."
   }
 }
 ```
 
 - Add an entry in the same task as the page. `npm run check:docs` fails on an entry whose page is missing or not in the sidebar.
 - A **waiver** is the last resort for a capability that is deliberately undocumented (internal/admin-only), every entry carries a reason, and a waiver whose capability now has a page is itself a finding — the list can only shrink.
-- Every product domain in `monolith/config/domains.php` needs a `product.{kebab}` entry. That check is cross-repo and reported *unverified* when the sibling checkout is absent.
+- Every product domain in `monolith/config/domains.php` needs a `product.{kebab}` entry when product domains exist. That check is cross-repo and reported *unverified* when the sibling checkout is absent.
 
 ## Never
 

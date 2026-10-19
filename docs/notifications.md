@@ -34,9 +34,8 @@ Marking things as read is reflected immediately, including in other tabs of the 
 
 Notifications cover the things worth knowing about rather than everything that happens:
 
-- **Billing.** When a subscription enters its grace period, and when it expires. These are the ones to act on, because grace is your window to renew.
 - **Your account.** When details on your account are changed.
-- **Product activity.** Events raised by the products you operate, such as an AI model that is being used for inference but is not yet in the catalog, which is billed at provisional rates until someone classifies it.
+- **Product activity.** Events raised by the products you operate.
 
 Some notifications are addressed to you personally, and others go to everyone who holds a particular role. Either way, you only ever see the ones meant for you.
 
@@ -51,4 +50,3 @@ If the bell stays empty when you expect something, confirm your account is verif
 ## Related
 
 - [Account & Security](/docs/account/)
-- [Billing & Subscriptions](/docs/billing/)

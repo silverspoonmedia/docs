@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "Capability -> page manifest: the claim that every shipped user-facing capability has a page. `source` is an owning-area label, not a filesystem path: it is the `monolith` code path when code owns the behavior (`monolith/app/Domain/**`), and an owning-area label (`silverspoon/platform`, `silverspoon/finance`, `silverspoon/legal`) when the page documents policy, brand, or infrastructure that no single code path owns. `npm run check:docs` fails when a page does not exist, is not reachable from sidebars.ts, or when a `kind => 'product'` domain in monolith/config/domains.php has no `product.<kebab>` entry.",
+  "note": "Capability -> page manifest: the claim that every shipped user-facing capability has a page. `source` is an owning-area label, not a filesystem path: it is the `monolith` code path when code owns the behavior (`monolith/app/Domain/**`), and an owning-area label (`silverspoon/platform`, `silverspoon/finance`, `silverspoon/legal`) when the page documents policy, brand, or infrastructure that no single code path owns. `npm run check:docs` fails when a page does not exist or is not reachable from sidebars.ts.",
   "capabilities": {
     "platform.introduction": { "page": "docs/intro.md", "source": "silverspoon/platform" },
 
@@ -12,14 +12,6 @@
 
     "notification.bell": { "page": "docs/notifications.md", "source": "monolith/app/Domain/Notification" },
 
-    "billing.overview": { "page": "docs/billing/index.md", "source": "monolith/app/Domain/PaymentGateway" },
-    "billing.services-and-subscriptions": { "page": "docs/billing/services-and-subscriptions.md", "source": "monolith/app/Domain/Service" },
-    "billing.invoices-and-payments": { "page": "docs/billing/invoices-and-payments.md", "source": "monolith/app/Domain/PaymentGateway" },
-    "billing.payments-and-taxation": { "page": "docs/billing/payments-and-taxation.md", "source": "silverspoon/finance" },
-
-
-
-
     "legal.overview": { "page": "docs/legal/index.md", "source": "silverspoon/legal" },
     "legal.terms": { "page": "docs/legal/terms.md", "source": "silverspoon/legal" },
     "legal.privacy": { "page": "docs/legal/privacy.md", "source": "silverspoon/legal" },
@@ -29,14 +21,10 @@
     "silverspoon.domain": { "page": "docs/silverspoon/domain.md", "source": "silverspoon/platform" }
   },
   "waivers": {
-    "inference.model-catalog": "Admin-only model catalog and provider rates — not a customer-facing capability.",
-    "ai.connections": "Admin-only AI connection configuration — operators only.",
+    "currency.catalog": "Admin-only currency and FX catalog — operators only.",
     "activity-log.audit-trail": "Admin-only audit trail viewer — operators only.",
     "error-log.grouped-errors": "Admin-only persistent error viewer — operators only.",
     "navigation.menu-tree": "Admin-only menu tree editor — operators only.",
-    "domain-access.visibility": "Admin-only product visibility gate — operators only.",
-    "payment-gateway.channels": "Admin-only payment channel configuration — operators only.",
-    "product-activations.registry": "Admin-only activation registry — operators only.",
     "settings.platform": "Admin-only runtime settings editor — operators only."
   }
 }

@@ -15,7 +15,7 @@ Before you dive into the details, here is a quick introduction to who I am. It s
 
 Silverspoon is a collection of products created and maintained by **Waka** (an initial, not a legal name). Most applications are built single-handedly, which is an efficient way to keep meetings short and bug reports emotionally personal.
 
-All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each app lives under its own path, such as `silverspoon.me/apps/dashboard`. The capabilities that every app shares, such as authentication and billing, live in one core layer that apps build on.
+All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each app lives under its own path, such as `silverspoon.me/apps/dashboard`. The capabilities that every app shares, such as authentication, notifications, and currency handling, live in one core layer that apps build on.
 
 Most products are published on the internet and can be used publicly. The codebase is mostly closed source, though several open source projects may appear in the future.
 
@@ -52,13 +52,13 @@ As a user, you are also expected to follow these regulations. I apologize in adv
 
 Only active products are listed here. Professionally, I create and run the following:
 
-Nothing is live at the moment. The platform is being prepared, and this section will list each product as it ships. Everything already documented under **Core** — account, billing, notifications, and the legal pages — is shared by every product that arrives later.
+Nothing is live at the moment. The platform is being prepared, and this section will list each product as it ships. Everything already documented under **Core** — account, notifications, and the legal pages — is shared by every product that arrives later.
 
 ## Documentation map
 
 This documentation is organized around how the platform is built:
 
-- **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
+- **Core** covers the shared capabilities every product builds on: your account and security, notifications, and the legal documents.
 - **Project** covers who I am and the official domains Silverspoon operates.
 
 ## Closing

@@ -30,8 +30,6 @@ No. Every account gets a free allowance, and paid services stack on top of it ra
 
 Development, maintenance, and operations cost real money, so the platform is not 100% free and does not run on a "burning money" strategy. The free allowance is part of every account rather than a trial; only the paid tiers are commercialized.
 
-For how paid services are billed and taxed, see [Payments and Taxation](/docs/billing/payments-and-taxation).
-
 ## Will there be multilingual support?
 
 Multilingual support has shipped. The interface is available in seven languages — English, Indonesian, Japanese, Korean, Simplified Chinese, Arabic, and Russian — and a selector in the top bar switches your preference, which is remembered on your account.
