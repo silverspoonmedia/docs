@@ -76,7 +76,7 @@ function walk(dir) {
 /** Docusaurus doc id for a page file: its path under `docs/` without `.md`. */
 const docIdOf = (path) => rel(path).replace(/^docs\//, '').replace(/\.md$/, '')
 
-/** `Microstock` -> `microstock`, `PaymentGateway` -> `payment-gateway`. */
+/** `PaymentGateway` -> `payment-gateway`, `ActivityLog` -> `activity-log`. */
 const kebab = (name) => name.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
 
 /** Front matter block of a page, or null when the file does not open with one. */
