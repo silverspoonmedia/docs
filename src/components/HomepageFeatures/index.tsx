@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        The shared capabilities every product builds on: your account and
-        security, billing and subscriptions, notifications, and legal.
+        The shared capabilities the office platform runs on: your account and
+        security, the notification bell, and the legal documents.
       </>
     ),
   },

@@ -7,13 +7,13 @@ sidebar_position: 2
 
 # Notifications
 
-Silverspoon tells you when something affects you: a plan entering grace, an account change, or another event worth your attention. Notifications arrive in the top-bar bell and stay in your history, because apparently memory is not a platform feature.
+Silverspoon tells you when something affects you: a role or permission change, an account change, or another event worth your attention. Notifications arrive in the top-bar bell and stay in your history, because apparently memory is not a platform feature.
 
 {/* TODO: screenshot static/img/docs/account/notifications-bell.webp */}
 
 ## The bell
 
-The bell shows a count of what you have not read yet. Open it to see recent notifications; selecting one takes you to whatever it is about, whether that is a page in a product or a settings screen.
+The bell shows a count of what you have not read yet. Open it to see recent notifications; selecting one takes you to whatever it is about, whether that is a record you manage or a settings screen.
 
 The count is kept up to date live while you are on the site. If your connection drops and comes back, the bell refreshes itself, so a missed moment does not leave a stale count.
 
@@ -34,8 +34,8 @@ Marking things as read is reflected immediately, including in other tabs of the 
 
 Notifications cover the things worth knowing about rather than everything that happens:
 
-- **Your account.** When details on your account are changed.
-- **Product activity.** Events raised by the products you operate.
+- **Your account.** When your own account details are changed, sent to you personally.
+- **User administration.** When an account is created, updated, or deleted, sent to the Root and Admin roles.
 
 Some notifications are addressed to you personally, and others go to everyone who holds a particular role. Either way, you only ever see the ones meant for you.
 

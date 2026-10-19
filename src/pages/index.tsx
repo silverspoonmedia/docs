@@ -33,7 +33,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Help Center"
-      description="Documentation and help for Silverspoon: the shared account, billing, notification, and legal surfaces, plus every product as it ships.">
+      description="Documentation and help for Silverspoon: the office platform's account, notification, audit, currency, and legal surfaces.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

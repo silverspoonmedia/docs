@@ -21,14 +21,11 @@ Currently, it operates as a one-man show for various reasons, mainly because cas
 
 There is always the possibility of bringing in additional team members in the future, should the budget allow.
 
-## Is this platform free to use?
+## Is this platform for sale?
 
-No. Every account gets a free allowance, and paid services stack on top of it rather than replacing it.
+No. The platform is an internal office application: it runs the day-to-day work of the office that owns it, and it has no public sign-up, no paid plans, and no billing.
 
-- **Core** is free. Signing up, signing in, two-factor authentication, notifications, and account settings cost nothing.
-- **Products** add their own free allowance and paid tiers on top of that. Storage plans, workspace slots, and prepaid usage credits are paid, and each product's page states what is included.
-
-Development, maintenance, and operations cost real money, so the platform is not 100% free and does not run on a "burning money" strategy. The free allowance is part of every account rather than a trial; only the paid tiers are commercialized.
+Development, maintenance, and operations still cost real money, but those costs are the office's own operating expense rather than something charged to a customer. Access is granted by an administrator, not purchased.
 
 ## Will there be multilingual support?
 
@@ -52,7 +49,7 @@ This page keeps you informed and provides transparency about any issues that may
 
 ### Ping result
 
-Another tool you can use to check the status of a product's services is a ping result. Public ping services provide real-time results for a hostname from Internet Service Providers (ISPs) across different countries and continents, which tells you how reachable the service is from where you are.
+Another tool you can use to check the status of the service is a ping result. Public ping services provide real-time results for a hostname from Internet Service Providers (ISPs) across different countries and continents, which tells you how reachable the service is from where you are.
 
 By using this tool, you gain valuable insight into the accessibility and performance of our services from various locations, helping you understand how well the service is functioning in your area and beyond. This additional resource can be particularly useful for troubleshooting and assessing connectivity issues between your localhost and the service.
 
@@ -63,7 +60,7 @@ If all resources indicate that the service is running smoothly and is accessible
 If you have tried all the suggested methods and verified that everything is functioning correctly, yet you still cannot access the service, reach out to us for further assistance. There may be an underlying issue that requires our attention, and we are here to help you resolve it.
 
 :::note[Example]
-While the server used by a product may be online, incorrect configurations could potentially block users from accessing the service.
+While the server may be online, incorrect configurations could potentially block users from accessing the service.
 :::
 
 Your experience is important to us, and we want to ensure you can access our services without hindrance.
@@ -78,4 +75,4 @@ That said, it is also essential to balance dreams with a reality check. If we re
 
 Feel free to ask any questions, and we will respond here so that others can benefit from the information as well. This is a great way to share knowledge and ensure everyone has access to the answers they may be seeking.
 
-Looking for something specific to a product? Start from that product's documentation under **Products** in the sidebar. A product that publishes its own FAQ links it from there.
+Looking for something specific? The sidebar groups the pages under **Core** and **Project**, and the [Account & Security](/docs/account/) section covers the everyday flows in more detail.

@@ -1,13 +1,13 @@
 ---
 title: Terms of Service
-description: The platform-wide terms that govern your use of Silverspoon and every product it hosts.
+description: The platform-wide terms that govern your use of Silverspoon.
 sidebar_label: Terms of Service
 sidebar_position: 1
 ---
 
 # Terms of Service
 
-These terms of service (which we will hereafter refer to as "Terms") govern your use of the Silverspoon platform, including its website and every product it hosts (together or individually hereafter referred to as "Service") operated by Silverspoon Media (which we will hereafter refer to as "Operator").
+These terms of service (which we will hereafter refer to as "Terms") govern your use of the Silverspoon platform, including its website and the application it serves (together or individually hereafter referred to as "Service") operated by Silverspoon Media (which we will hereafter refer to as "Operator").
 
 Our [Privacy Policy](/docs/legal/privacy) also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages.
 
@@ -15,8 +15,8 @@ Your agreement with us includes these Terms and our Privacy Policy (which we wil
 
 If you do not agree with (or cannot comply with) the Agreements, then you may not use the Service. Feedback is greatly appreciated if there is anything you disagree with in these Agreements. These Terms apply to all visitors, users and others who wish to access or use the Service.
 
-:::info[Product terms]
-Individual products may publish their own terms covering product-specific behavior. Those documents supplement these Terms and, where they conflict on that product's subject matter, take precedence for that product. See [Legal](/docs/legal/) for the current list.
+:::info[One set of terms]
+The platform is a single internal application, so these Terms cover every surface you sign in to. No additional terms apply.
 :::
 
 ## Communications
@@ -68,7 +68,7 @@ You are responsible for maintaining the confidentiality of your account and pass
 
 You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trademark that is subject to any rights of another person or entity other than you, without appropriate authorization. You may not use as a username any name that is offensive, vulgar or obscene.
 
-We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders in our sole discretion.
+We reserve the right to refuse service, terminate accounts, remove or edit content in our sole discretion.
 
 ## Intellectual Property
 
@@ -125,7 +125,7 @@ THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED
 
 ## Limitation Of Liability
 
-EXCEPT AS PROHIBITED BY LAW, YOU WILL HOLD US AND OUR OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS HARMLESS FOR ANY INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGE, HOWEVER IT ARISES (INCLUDING ATTORNEYS' FEES AND ALL RELATED COSTS AND EXPENSES OF LITIGATION AND ARBITRATION, OR AT TRIAL OR ON APPEAL, IF ANY, WHETHER OR NOT LITIGATION OR ARBITRATION IS INSTITUTED), WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, OR ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, INCLUDING WITHOUT LIMITATION ANY CLAIM FOR PERSONAL INJURY OR PROPERTY DAMAGE, ARISING FROM THIS AGREEMENT AND ANY VIOLATION BY YOU OF ANY FEDERAL, STATE, OR LOCAL LAWS, STATUTES, RULES, OR REGULATIONS, EVEN IF THE SERVICE HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. EXCEPT AS PROHIBITED BY LAW, IF THERE IS LIABILITY FOUND ON THE PART OF THE SERVICE, IT WILL BE LIMITED TO THE AMOUNT PAID FOR THE PRODUCTS AND/OR SERVICES, AND UNDER NO CIRCUMSTANCES WILL THERE BE CONSEQUENTIAL OR PUNITIVE DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE PRIOR LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
+EXCEPT AS PROHIBITED BY LAW, YOU WILL HOLD US AND OUR OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS HARMLESS FOR ANY INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGE, HOWEVER IT ARISES (INCLUDING ATTORNEYS' FEES AND ALL RELATED COSTS AND EXPENSES OF LITIGATION AND ARBITRATION, OR AT TRIAL OR ON APPEAL, IF ANY, WHETHER OR NOT LITIGATION OR ARBITRATION IS INSTITUTED), WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, OR ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, INCLUDING WITHOUT LIMITATION ANY CLAIM FOR PERSONAL INJURY OR PROPERTY DAMAGE, ARISING FROM THIS AGREEMENT AND ANY VIOLATION BY YOU OF ANY FEDERAL, STATE, OR LOCAL LAWS, STATUTES, RULES, OR REGULATIONS, EVEN IF THE SERVICE HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. EXCEPT AS PROHIBITED BY LAW, IF THERE IS LIABILITY FOUND ON THE PART OF THE SERVICE, IT WILL BE LIMITED TO THE AMOUNT PAID BY YOU FOR THE SERVICE, IF ANY, AND UNDER NO CIRCUMSTANCES WILL THERE BE CONSEQUENTIAL OR PUNITIVE DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE PRIOR LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
 
 ## Termination
 
@@ -165,11 +165,9 @@ BY USING THE SERVICE OR OTHER SERVICES PROVIDED BY US, YOU ACKNOWLEDGE THAT YOU 
 
 ## Third-party Terms of Service
 
-We integrate third-party services into our platform for security, reliability, and optimization:
+We integrate third-party services into our platform for security and delivery:
 
 - [Cloudflare Terms of Service](https://www.cloudflare.com/website-terms)
 - [HCaptcha Terms of Service](https://www.hcaptcha.com/terms)
 
 By using our services, you also agree and are bound by their terms of service.
-
-Individual products may rely on additional third-party services. Those are listed with the product's own terms, when a product publishes them.

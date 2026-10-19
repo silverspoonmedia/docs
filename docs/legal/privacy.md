@@ -9,8 +9,8 @@ sidebar_position: 2
 
 We respect user privacy and are committed to protecting the information you provide to us. This privacy policy explains how we collect, use and protect your information when you use the Silverspoon platform, its website and its services.
 
-:::info[Product privacy notices]
-Some products integrate third-party platforms that come with their own privacy requirements. Those are documented with the product, and they supplement this policy rather than replace it. See [Legal](/docs/legal/) for the current list.
+:::info[One policy, one platform]
+Silverspoon is a single internal platform, so this policy covers every surface you sign in to. There is no separate product-level privacy notice to read alongside it.
 :::
 
 ## Collection of Cookies
@@ -26,14 +26,14 @@ You can control or delete cookies as you wish. Most web browsers allow you to se
 When you use the platform, we collect the information you provide voluntarily, including but not limited to:
 
 - Account details such as your name, email address, and language preference,
-- The content you create in the products you use, along with the metadata you attach to it,
+- The records you create in the platform, along with the metadata you attach to them,
 - Messages you send to us through a support or contact channel.
 
-You can review, correct, or remove this information yourself from the product that holds it, or by contacting us.
+You can review, correct, or remove this information yourself from the screen that holds it, or by contacting us.
 
 ## How We Use Your Information
 
-We use the information we collect to operate the platform: to store and serve your content, to run the products you have activated, to keep your account and preferences working across sessions, to process paid services, and to send the account messages and notifications described in this policy.
+We use the information we collect to operate the platform: to store and serve your records, to keep your account, roles, and preferences working across sessions, and to send the account messages and notifications described in this policy.
 
 ## Control of your data
 
@@ -51,11 +51,9 @@ A valid email address is required for services that require registration. We use
 
 ## Third-party Privacy Policy
 
-We integrate these third-party services into our platform which serve as extra security and additional optimization:
+We integrate these third-party services into our platform, where they provide extra security and delivery:
 
 - [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy)
 - [HCaptcha Privacy Policy](https://www.hcaptcha.com/privacy-policy)
 
 By using our services, you also agree and are bound by their privacy policy.
-
-Individual products may integrate additional third-party services that process data on their behalf. Those are listed with the product's own privacy notice, when a product publishes one.
