@@ -25,8 +25,8 @@ There is always the possibility of bringing in additional team members in the fu
 
 No. Every account gets a free allowance, and paid services stack on top of it rather than replacing it.
 
-- **Archivd** includes a free storage allowance with every account. Paid storage plans and stackable add-ons extend it, and a team workspace slot add-on adds collaborative workspaces.
-- **Microstock** activates free with one built-in workspace slot. Extra workspace slots and prepaid AI analysis credits are paid.
+- **Core** is free. Signing up, signing in, two-factor authentication, notifications, and account settings cost nothing.
+- **Products** add their own free allowance and paid tiers on top of that. Storage plans, workspace slots, and prepaid usage credits are paid, and each product's page states what is included.
 
 Development, maintenance, and operations cost real money, so the platform is not 100% free and does not run on a "burning money" strategy. The free allowance is part of every account rather than a trial; only the paid tiers are commercialized.
 

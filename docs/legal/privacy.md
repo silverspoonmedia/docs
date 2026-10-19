@@ -26,15 +26,14 @@ You can control or delete cookies as you wish. Most web browsers allow you to se
 When you use the platform, we collect the information you provide voluntarily, including but not limited to:
 
 - Account details such as your name, email address, and language preference,
-- The files, folders, and workspaces you create in Archivd, along with the metadata you attach to them,
-- The image metadata, collections, and export records you create in Microstock,
+- The content you create in the products you use, along with the metadata you attach to it,
 - Messages you send to us through a support or contact channel.
 
 You can review, correct, or remove this information yourself from the product that holds it, or by contacting us.
 
 ## How We Use Your Information
 
-We use the information we collect to operate the platform: to store and serve your files, to run the products you have activated, to keep your account and preferences working across sessions, to process paid services, and to send the account messages and notifications described in this policy.
+We use the information we collect to operate the platform: to store and serve your content, to run the products you have activated, to keep your account and preferences working across sessions, to process paid services, and to send the account messages and notifications described in this policy.
 
 ## Control of your data
 

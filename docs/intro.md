@@ -15,7 +15,7 @@ Before you dive into the details, here is a quick introduction to who I am. It s
 
 Silverspoon is a collection of products created and maintained by **Waka** (an initial, not a legal name). Most applications are built single-handedly, which is an efficient way to keep meetings short and bug reports emotionally personal.
 
-All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each product lives under its own path, such as `silverspoon.me/apps/archivd`. The capabilities that every product shares, such as authentication and billing, live in one core layer that products build on.
+All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each app lives under its own path, such as `silverspoon.me/apps/dashboard`. The capabilities that every app shares, such as authentication and billing, live in one core layer that apps build on.
 
 Most products are published on the internet and can be used publicly. The codebase is mostly closed source, though several open source projects may appear in the future.
 
@@ -52,27 +52,12 @@ As a user, you are also expected to follow these regulations. I apologize in adv
 
 Only active products are listed here. Professionally, I create and run the following:
 
-### Archivd
-
-Archivd is Silverspoon's file storage product: a lightweight drive for keeping, organizing, and sharing files, with paid team workspaces for working on the same files together.
-
-Everyone gets a personal drive with nested folders, chunked uploads, a trash bin, and link sharing. Paid accounts add team workspaces, where you invite people by email and give each of them a role, and where the files draw on the workspace owner's storage rather than each member's own allowance.
-
-Start with the [Archivd documentation](/docs/archivd/about).
-
-### Microstock
-
-Microstock turns a folder of images into the metadata a stock marketplace expects: titles, descriptions, categories, and keywords. The drafting is done by AI, and you review and curate the result before exporting.
-
-It runs inside a dedicated Archivd workspace, so uploads, quota, and file handling all come from the same place. It is opt-in, activated from the service catalog, and its AI analysis is billed separately from storage.
-
-Start with the [Microstock documentation](/docs/microstock/about).
+Nothing is live at the moment. The platform is being prepared, and this section will list each product as it ships. Everything already documented under **Core** — account, billing, notifications, and the legal pages — is shared by every product that arrives later.
 
 ## Documentation map
 
 This documentation is organized around how the platform is built:
 
-- **Products** covers each product's features and how to use them: Archivd and Microstock.
 - **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
 - **Project** covers who I am and the official domains Silverspoon operates.
 

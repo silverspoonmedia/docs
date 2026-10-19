@@ -60,17 +60,6 @@ The purchase page labels what kind of change you are making, so you always know 
 
 When you change a main plan mid-period, unused time on the current plan is credited toward the new one, which the page shows as unused credit and, where it applies, extra days added to the new period.
 
-## The Microstock card
-
-Microstock has its own card in the catalog, because its workspace slots and AI credit are separate from storage plans:
-
-- **Activate free** enables the free Microstock workspace.
-- **Buy slot** adds one more Microstock workspace slot.
-- **Buy AI credits** tops up your prepaid AI analysis balance, with a per-asset estimate shown alongside.
-- **Usage & balance** links to the Microstock usage page.
-
-See [Credits and Usage](/docs/microstock/credits-and-usage) for how the AI balance is spent.
-
 ## Where a purchase shows up
 
 Each purchase has its own page at `/apps/service-purchases/{id}`, which is also where you pay for it. The page shows the period covered, the current entitlement status, the quantity, and what the purchase will change.

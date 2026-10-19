@@ -17,17 +17,8 @@
     "billing.invoices-and-payments": { "page": "docs/billing/invoices-and-payments.md", "source": "monolith/app/Domain/PaymentGateway" },
     "billing.payments-and-taxation": { "page": "docs/billing/payments-and-taxation.md", "source": "silverspoon/finance" },
 
-    "product.archivd": { "page": "docs/archivd/about.md", "source": "monolith/app/Domain/Archivd" },
-    "archivd.files-and-folders": { "page": "docs/archivd/files-and-folders.md", "source": "monolith/app/Domain/Archivd" },
-    "archivd.sharing": { "page": "docs/archivd/sharing.md", "source": "monolith/app/Domain/Archivd" },
-    "archivd.storage-and-plans": { "page": "docs/archivd/storage-and-plans.md", "source": "monolith/app/Domain/Service" },
-    "archivd.workspaces": { "page": "docs/archivd/workspaces.md", "source": "monolith/app/Domain/Archivd" },
 
 
-    "product.microstock": { "page": "docs/microstock/about.md", "source": "monolith/app/Domain/Microstock" },
-    "microstock.collections": { "page": "docs/microstock/collections.md", "source": "monolith/app/Domain/Microstock" },
-    "microstock.credits-and-usage": { "page": "docs/microstock/credits-and-usage.md", "source": "monolith/app/Domain/Microstock" },
-    "microstock.export-and-upload": { "page": "docs/microstock/export-and-upload.md", "source": "monolith/app/Domain/Microstock" },
 
     "legal.overview": { "page": "docs/legal/index.md", "source": "silverspoon/legal" },
     "legal.terms": { "page": "docs/legal/terms.md", "source": "silverspoon/legal" },
