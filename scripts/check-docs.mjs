@@ -50,9 +50,16 @@ const SKIP_DIRS = new Set(['node_modules', '.git', 'build', '.docusaurus', '.cac
 // siblings. A page missing one of them still builds, which is why it is checked.
 const REQUIRED_FRONT_MATTER = ['title', 'description', 'sidebar_label', 'sidebar_position']
 
-// The sibling `monolith` checkout, one level up. Only the added-domain claim
-// needs it.
-const SIBLING = resolve(ROOT, '..', 'monolith')
+// The sibling backend checkout, one level up. Only the added-domain claim
+// needs it. The folder name is not stable — a copy of the pair into `erp-docs`
+// next to `erp-backend` would leave every claim unverified — so `BACKEND_PATH`
+// overrides, then the post-copy name, then the original one.
+const SIBLING =
+  process.env.BACKEND_PATH?.trim() ||
+  ['erp-backend', 'monolith']
+    .map((name) => resolve(ROOT, '..', name))
+    .find((path) => existsSync(path)) ||
+  resolve(ROOT, '..', 'monolith')
 const siblingRepoIsPresent = () => existsSync(join(SIBLING, 'app', 'Domain'))
 
 const failures = []
