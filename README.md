@@ -31,5 +31,5 @@ The hosting target for `help.silverspoon.me` is **not decided yet**, so publishi
 
 Read [`.cursor/rules/docs-pakem.mdc`](.cursor/rules/docs-pakem.mdc) for the page shape and [`.cursor/rules/docs-sync.mdc`](.cursor/rules/docs-sync.mdc) for when a page must change. Two that catch people out:
 
-- **English only.** The site's locale set is `['en']` by design; the product's seven locales are a different surface.
+- **English only.** The site's locale set is `['en']` by design; the product's two locales are a different surface.
 - **Write what shipped.** A page describing behavior the platform does not have is a defect, not a placeholder.

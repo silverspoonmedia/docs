@@ -32,17 +32,12 @@ Once you are signed in, your account menu in the top bar links to the pages abov
 
 ## Language
 
-The interface is available in several languages. A language selector in the top bar switches your preference, and it is remembered on your account, so the choice follows you to other devices. Arabic is displayed right to left.
+The interface is available in English and Indonesian. A language selector in the top bar switches your preference, and it is remembered on your account, so the choice follows you to other devices.
 
 | Locale | Language |
 |--------|----------|
 | `en` | English |
 | `id` | Indonesian |
-| `ja` | Japanese |
-| `ko` | Korean |
-| `zh_CN` | Chinese (Simplified) |
-| `ar` | Arabic |
-| `ru` | Russian |
 
 ## Security at a glance
 

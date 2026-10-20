@@ -33,7 +33,7 @@ sidebar_position: 3
 
 ## Content
 
-- **English only.** Published copy is the customer's manual, not a translation surface. The site's locale set is `['en']` by design — the product's seven locales (`en`, `id`, `ja`, `ko`, `zh_CN`, `ar`, `ru`) are a different surface and do not apply here. Adding a site locale is a deliberate configuration decision, not an automatic mirror.
+- **English only.** Published copy is the customer's manual, not a translation surface. The site's locale set is `['en']` by design — the product's two locales (`en`, `id`) are a different surface and do not apply here. Adding a site locale is a deliberate configuration decision, not an automatic mirror.
 - **Match shipped behavior.** Use the real UI path (`/apps/profile/password`), the real plan names, the real locale list. Never invent a feature, a limit, or an SLA.
 - Write to the reader: second person, present tense, imperative for steps. A heading is a stable label, not a sentence.
 - Admonitions (`:::tip`, `:::info`, `:::warning`, `:::note`) are for a real gotcha; never decorate with them.

@@ -29,7 +29,7 @@ Development, maintenance, and operations still cost real money, but those costs 
 
 ## Will there be multilingual support?
 
-Multilingual support has shipped. The interface is available in seven languages — English, Indonesian, Japanese, Korean, Simplified Chinese, Arabic, and Russian — and a selector in the top bar switches your preference, which is remembered on your account.
+Multilingual support has shipped. The interface is available in English and Indonesian, and a selector in the top bar switches your preference, which is remembered on your account.
 
 The set of languages is deliberate rather than automatic: a language is added when there is a real audience for it.
 

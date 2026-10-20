@@ -30,4 +30,4 @@ Doc map: [README.md](README.md) (repo setup). Coverage manifest: `docs-coverage.
 
 ## Status
 
-Deploy target is **undecided** — CI is build-only (`npm run build`), publishing stays manual. Site locale is `['en']` by design; the product's seven locales are a different surface.
+Deploy target is **undecided** — CI is build-only (`npm run build`), publishing stays manual. Site locale is `['en']` by design; the product's two locales are a different surface.
