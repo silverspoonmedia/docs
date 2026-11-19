@@ -7,9 +7,9 @@ sidebar_position: 1
 
 # Account & Security
 
-Your Silverspoon account works across every product on the platform. Sign in once to access Archivd, Microstock, and whatever arrives later. Security settings apply everywhere, saving you from managing several tiny kingdoms of credentials.
+Your Silverspoon account is your identity on the platform. Sign in once and it applies to everything you can reach, now and later. Security settings apply everywhere, saving you from managing several tiny kingdoms of credentials.
 
-This section covers the parts of your account that are shared platform-wide. Product-specific settings live with that product's documentation.
+This section covers the parts of your account that are shared platform-wide.
 
 ## In this section
 
@@ -32,17 +32,12 @@ Once you are signed in, your account menu in the top bar links to the pages abov
 
 ## Language
 
-The interface is available in several languages. A language selector in the top bar switches your preference, and it is remembered on your account, so the choice follows you to other devices. Arabic is displayed right to left.
+The interface is available in English and Indonesian. A language selector in the top bar switches your preference, and it is remembered on your account, so the choice follows you to other devices.
 
 | Locale | Language |
 |--------|----------|
 | `en` | English |
 | `id` | Indonesian |
-| `ja` | Japanese |
-| `ko` | Korean |
-| `zh_CN` | Chinese (Simplified) |
-| `ar` | Arabic |
-| `ru` | Russian |
 
 ## Security at a glance
 

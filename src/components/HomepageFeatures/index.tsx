@@ -11,22 +11,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Products',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Feature-by-feature documentation for every product on the platform:
-        Archivd and Microstock.
-      </>
-    ),
-  },
-  {
     title: 'Core',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        The shared capabilities every product builds on: your account and
-        security, billing and subscriptions, notifications, and legal.
+        The shared capabilities the office platform runs on: your account and
+        security, the notification bell, and the legal documents.
       </>
     ),
   },
@@ -44,7 +34,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

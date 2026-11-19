@@ -38,5 +38,5 @@ npm run build         # onBrokenLinks + onBrokenAnchors both throw
 ```
 
 - The guard resolves page reachability from `sidebars.ts`; a page that is not in the sidebar is an orphan and fails.
-- A cross-repo claim (a product domain with no page) is *unverified* when the sibling `monolith` checkout is absent, never *broken* — the same contract the two sibling guards use.
+- A cross-repo claim (an added domain with no page) is *unverified* when the sibling `monolith` checkout is absent, never *broken* — the same contract the two sibling guards use.
 - Full behavioral rules live in `docs-sync.mdc` and `docs-content.mdc`; this file owns the *shape*.

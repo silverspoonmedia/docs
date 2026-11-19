@@ -72,51 +72,17 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {
-          type: 'dropdown',
-          label: 'Products',
-          position: 'left',
-          items: [
-            {
-              type: 'doc',
-              docId: 'archivd/about',
-              label: 'Archivd',
-            },
-            {
-              type: 'doc',
-              docId: 'microstock/about',
-              label: 'Microstock',
-            },
-          ],
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Products',
-          items: [
-            {
-              label: 'Archivd',
-              to: '/docs/archivd/about',
-            },
-            {
-              label: 'Microstock',
-              to: '/docs/microstock/about',
-            },
-          ],
-        },
-        {
           title: 'Core',
           items: [
             {
               label: 'Account & Security',
               to: '/docs/account/',
-            },
-            {
-              label: 'Billing & Subscriptions',
-              to: '/docs/billing/',
             },
             {
               label: 'Notifications',

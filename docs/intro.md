@@ -1,28 +1,28 @@
 ---
 title: Introduction
-description: A short introduction to Silverspoon Media, the name behind it, and the products I run.
+description: A short introduction to Silverspoon Media, the name behind it, and the office platform it runs.
 sidebar_label: Introduction
 sidebar_position: 1
 ---
 
 # Introduction
 
-Welcome to the Silverspoon helpdesk portal—the home base for everything I build, document, and support. Think of it as the map, minus the dramatic compass music.
+Welcome to the Silverspoon helpdesk portal—the home base for the office platform I build, document, and support. Think of it as the map, minus the dramatic compass music.
 
 Before you dive into the details, here is a quick introduction to who I am. It should take no more than five minutes, unless you get distracted by a particularly persuasive heading.
 
 ## What Silverspoon is
 
-Silverspoon is a collection of products created and maintained by **Waka** (an initial, not a legal name). Most applications are built single-handedly, which is an efficient way to keep meetings short and bug reports emotionally personal.
+Silverspoon is an internal office platform created and maintained by **Waka** (an initial, not a legal name). It is built single-handedly, which is an efficient way to keep meetings short and bug reports emotionally personal.
 
-All of them run as one platform rather than as separate sites. There is a single codebase and a single entry point at `silverspoon.me`, and each product lives under its own path, such as `silverspoon.me/apps/archivd`. The capabilities that every product shares, such as authentication and billing, live in one core layer that products build on.
+The platform is a general ERP base for day-to-day office work: accounts and access, menus and navigation, notifications, the audit trail, the error log, and currencies. It is not a public service and it is not sold: the people who use it are the people who work in the office it was built for.
 
-Most products are published on the internet and can be used publicly. The codebase is mostly closed source, though several open source projects may appear in the future.
+Everything runs as one application rather than as separate sites. There is a single codebase and a single entry point, and the browser UI is one SPA that talks to one API. A capability is either part of the platform core or an added domain layered on top of it.
 
-My products are primarily everyday applications built on a **SaaS (Software as a Service)** model. I rarely build something tied to a single person or company, simply because I enjoy the SaaS model—and apparently enjoy making software more than naming it.
+The codebase is mostly closed source, though several open source projects may appear in the future.
 
-- **Short-term goal:** serve these projects as a portfolio of my skills.
-- **Long-term goal:** grow them into mature, product-driven businesses.
+- **Short-term goal:** run the office's daily operations on one consistent platform.
+- **Long-term goal:** keep adding the domains the office actually needs, and nothing it does not.
 
 :::tip
 I am always open to new possibilities and collaborations. Reasonable ideas welcome; mysterious spreadsheets may require coffee first.
@@ -32,9 +32,7 @@ I am always open to new possibilities and collaborations. Reasonable ideas welco
 
 The name "Silverspoon" is not just a label; it carries meaning. As described on [Wikipedia](https://en.wikipedia.org/wiki/Silver_spoon), the term "silver spoon" describes someone born into a prosperous background, often implying that their advantages were inherited rather than earned.
 
-That citation is abstract, so here is the actual reason I chose the name: I want everyone who has a relationship with Silverspoon, whether owner, user, or partner, to receive goodness and prosperity. Just like the silver spoon itself, anyone can be the silver spoon.
-
-That is why SaaS is the business model that fits me best for now.
+That citation is abstract, so here is the actual reason I chose the name: I want everyone who has a relationship with Silverspoon, whether owner, staff, or partner, to receive goodness and prosperity. Just like the silver spoon itself, anyone can be the silver spoon.
 
 ## Team
 
@@ -48,34 +46,26 @@ Every Silverspoon project complies with the regulations of the **Republic of Ind
 
 As a user, you are also expected to follow these regulations. I apologize in advance if that is not to your liking.
 
-## Products
+## Domains
 
-Only active products are listed here. Professionally, I create and run the following:
+The platform ships with six core domains. They are the whole product today; anything else is added later, one domain at a time.
 
-### Archivd
-
-Archivd is Silverspoon's file storage product: a lightweight drive for keeping, organizing, and sharing files, with paid team workspaces for working on the same files together.
-
-Everyone gets a personal drive with nested folders, chunked uploads, a trash bin, and link sharing. Paid accounts add team workspaces, where you invite people by email and give each of them a role, and where the files draw on the workspace owner's storage rather than each member's own allowance.
-
-Start with the [Archivd documentation](/docs/archivd/about).
-
-### Microstock
-
-Microstock turns a folder of images into the metadata a stock marketplace expects: titles, descriptions, categories, and keywords. The drafting is done by AI, and you review and curate the result before exporting.
-
-It runs inside a dedicated Archivd workspace, so uploads, quota, and file handling all come from the same place. It is opt-in, activated from the service catalog, and its AI analysis is billed separately from storage.
-
-Start with the [Microstock documentation](/docs/microstock/about).
+| Domain | What it does |
+|--------|--------------|
+| Identity | Accounts, sign-in, two-factor authentication, roles, and permissions. |
+| Navigation | The menu tree, its layouts, and per-role visibility. |
+| Notification | The bell, the notification history, and role-targeted audiences. |
+| ActivityLog | The audit trail of what changed, by whom, and when. |
+| ErrorLog | Grouped application errors, kept for operators to review. |
+| Currency | The currency catalog and the single settlement currency. |
 
 ## Documentation map
 
 This documentation is organized around how the platform is built:
 
-- **Products** covers each product's features and how to use them: Archivd and Microstock.
-- **Core** covers the shared capabilities every product builds on: your account and security, billing and subscriptions, notifications, and the legal documents.
+- **Core** covers the capabilities every account touches: your account and security, notifications, and the legal documents.
 - **Project** covers who I am and the official domains Silverspoon operates.
 
 ## Closing
 
-That is roughly the introduction to Silverspoon Media. You made it to the end, so the documentation has already achieved one small victory. Enjoy the projects I present.
+That is roughly the introduction to Silverspoon Media. You made it to the end, so the documentation has already achieved one small victory. Enjoy the platform.

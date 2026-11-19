@@ -12,7 +12,7 @@
 // filled in (so the sidebar shows a bare title), a page nobody can navigate to
 // (an orphan — real content, unreachable), a `docId`/`to:` in the site config
 // that points at a page that was renamed, a coverage entry whose page was moved
-// without updating the manifest, a product domain in the backend registry with no
+// without updating the manifest, an added domain in the backend registry with no
 // page here at all, a waiver that no longer waives anything, and a rule whose
 // `globs:` matches nothing (so it never fires).
 //
@@ -21,7 +21,7 @@
 // screens), every entry carries a reason, and a waiver whose capability now has a
 // page is itself a finding — the list can only shrink.
 //
-// The product-domain check reads the sibling `monolith` checkout. CI checks out
+// The added-domain check reads the sibling `monolith` checkout. CI checks out
 // this repo alone, so a missing sibling makes that claim *unverified*, never
 // broken — the same contract the two sibling guards use, and the count is printed
 // on the OK line so a green run cannot be read as "every claim verified".
@@ -50,9 +50,16 @@ const SKIP_DIRS = new Set(['node_modules', '.git', 'build', '.docusaurus', '.cac
 // siblings. A page missing one of them still builds, which is why it is checked.
 const REQUIRED_FRONT_MATTER = ['title', 'description', 'sidebar_label', 'sidebar_position']
 
-// The sibling `monolith` checkout, one level up. Only the product-domain claim
-// needs it.
-const SIBLING = resolve(ROOT, '..', 'monolith')
+// The sibling backend checkout, one level up. Only the added-domain claim
+// needs it. The folder name is not stable — a copy of the pair into `erp-docs`
+// next to `erp-backend` would leave every claim unverified — so `BACKEND_PATH`
+// overrides, then the post-copy name, then the original one.
+const SIBLING =
+  process.env.BACKEND_PATH?.trim() ||
+  ['erp-backend', 'monolith']
+    .map((name) => resolve(ROOT, '..', name))
+    .find((path) => existsSync(path)) ||
+  resolve(ROOT, '..', 'monolith')
 const siblingRepoIsPresent = () => existsSync(join(SIBLING, 'app', 'Domain'))
 
 const failures = []
@@ -76,8 +83,27 @@ function walk(dir) {
 /** Docusaurus doc id for a page file: its path under `docs/` without `.md`. */
 const docIdOf = (path) => rel(path).replace(/^docs\//, '').replace(/\.md$/, '')
 
-/** `Microstock` -> `microstock`, `PaymentGateway` -> `payment-gateway`. */
+/** `PaymentGateway` -> `payment-gateway`, `ActivityLog` -> `activity-log`. */
 const kebab = (name) => name.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
+
+/**
+ * The flat domain registry: every name in `config/domains.php`, minus the
+ * platform core that `DomainManager::PLATFORM_CORE` owns. Anything left is an
+ * added domain, which is a customer-facing surface by definition.
+ *
+ * The entries are one-line arrays — `'Archivd' => ['kind' => 'product', …],` —
+ * so the match is anchored on the `'Name' => [` shape and stops at the opening
+ * bracket. Matching a bare `'Name',` line found nothing: every key in that file
+ * has a value, so the check silently examined zero domains and stayed green.
+ */
+function addedDomains() {
+  const config = readFileSync(join(SIBLING, 'config', 'domains.php'), 'utf8')
+  const manager = readFileSync(join(SIBLING, 'app', 'Support', 'Domain', 'DomainManager.php'), 'utf8')
+  const coreBlock = manager.match(/PLATFORM_CORE\s*=\s*\[([^\]]*)\]/)
+  const core = new Set([...(coreBlock ? coreBlock[1] : '').matchAll(/'([^']+)'/g)].map(([, name]) => name))
+  const registered = [...config.matchAll(/^\s{4,}'([A-Za-z0-9_]+)'\s*=>\s*\[/gm)].map(([, name]) => name)
+  return [...new Set(registered)].filter((name) => !core.has(name))
+}
 
 /** Front matter block of a page, or null when the file does not open with one. */
 function frontMatter(contents) {
@@ -285,21 +311,16 @@ if (!existsSync(MANIFEST)) {
       }
     }
 
-    // A new product domain in the backend registry is a customer-facing surface
-    // by definition. Cross-repo, so it is verified only when the sibling is here.
+    // An added domain in the backend registry is a customer-facing surface by
+    // definition. Cross-repo, so it is verified only when the sibling is here.
     const domainsConfig = join(SIBLING, 'config', 'domains.php')
 
     if (siblingRepoIsPresent() && existsSync(domainsConfig)) {
-      const domains = readFileSync(domainsConfig, 'utf8')
-
-      for (const match of domains.matchAll(/^\s*'(\w+)'\s*=>\s*\[([^\]]*)\]/gm)) {
-        const [, name, body] = match
-        if (!/kind'\s*=>\s*'product'/.test(body)) continue
-
-        const key = `product.${kebab(name)}`
+      for (const name of addedDomains()) {
+        const key = `domain.${kebab(name)}`
 
         if (!Object.prototype.hasOwnProperty.call(capabilities, key) && !Object.prototype.hasOwnProperty.call(waivers, key)) {
-          note(`product domain ${name} has no '${key}' entry in docs-coverage.json — add its page or a waiver`)
+          note(`added domain ${name} has no '${key}' entry in docs-coverage.json — add its page or a waiver`)
         }
       }
     } else {

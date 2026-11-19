@@ -5,7 +5,7 @@ This repo is a peer root in all three Monolith workspaces (`Monolith-Backend`, `
 | Task | Open |
 |------|------|
 | Edit a page | That page, plus `docs-coverage.json` when the capability is new |
-| Add a product or section | `sidebars.ts`, `docusaurus.config.ts`, one existing page as the shape reference |
+| Add a domain or section | `sidebars.ts`, `docusaurus.config.ts`, one existing page as the shape reference |
 | Cross-repo page | The page, the manifest entry, and the sibling file that owns the behavior |
 
 - Never `Read` the whole `docs/` tree or the whole `sidebars.ts`. Grep the page path or the heading you need.

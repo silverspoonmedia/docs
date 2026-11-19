@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Services and Subscriptions
 
-The **Services** catalog is where everything purchasable lives: storage plans, workspace slots, AI credit, and the add-ons that extend them. A tidy shelf for things you can buy; capitalism does love a menu.
+The **Services** catalog is where everything purchasable lives: plans, per-domain slots and credit, and the add-ons that extend them. A tidy shelf for things you can buy; capitalism does love a menu.
 
 {/* TODO: screenshot static/img/docs/billing/services-catalog.webp */}
 
@@ -41,7 +41,7 @@ Add-ons stack, so the checkout shows the arithmetic before you commit:
 current stack + units you buy = new total
 ```
 
-The preview also tells you how much the purchase adds to your allowance, for example extra storage or one more workspace slot. Quantities are estimates until you continue to payment, where the final amount is confirmed.
+The preview also tells you how much the purchase adds to your allowance, for example extra capacity or one more allocated slot. Quantities are estimates until you continue to payment, where the final amount is confirmed.
 
 Main plans are always a quantity of one, because only one can be active at a time.
 
@@ -60,16 +60,9 @@ The purchase page labels what kind of change you are making, so you always know 
 
 When you change a main plan mid-period, unused time on the current plan is credited toward the new one, which the page shows as unused credit and, where it applies, extra days added to the new period.
 
-## The Microstock card
+## Domain-specific cards
 
-Microstock has its own card in the catalog, because its workspace slots and AI credit are separate from storage plans:
-
-- **Activate free** enables the free Microstock workspace.
-- **Buy slot** adds one more Microstock workspace slot.
-- **Buy AI credits** tops up your prepaid AI analysis balance, with a per-asset estimate shown alongside.
-- **Usage & balance** links to the Microstock usage page.
-
-See [Credits and Usage](/docs/microstock/credits-and-usage) for how the AI balance is spent.
+Some purchases are not storage at all: a domain can add its own card to the catalog for the slots or credit it sells, and the card carries the actions that fit it — activate, buy a unit, top up a balance, open the usage page. What each action does is described on that card, because the catalog is the list of what this deployment actually sells.
 
 ## Where a purchase shows up
 
