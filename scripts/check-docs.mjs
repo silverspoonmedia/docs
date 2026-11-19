@@ -90,14 +90,19 @@ const kebab = (name) => name.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase(
  * The flat domain registry: every name in `config/domains.php`, minus the
  * platform core that `DomainManager::PLATFORM_CORE` owns. Anything left is an
  * added domain, which is a customer-facing surface by definition.
+ *
+ * The entries are one-line arrays — `'Archivd' => ['kind' => 'product', …],` —
+ * so the match is anchored on the `'Name' => [` shape and stops at the opening
+ * bracket. Matching a bare `'Name',` line found nothing: every key in that file
+ * has a value, so the check silently examined zero domains and stayed green.
  */
 function addedDomains() {
   const config = readFileSync(join(SIBLING, 'config', 'domains.php'), 'utf8')
   const manager = readFileSync(join(SIBLING, 'app', 'Support', 'Domain', 'DomainManager.php'), 'utf8')
   const coreBlock = manager.match(/PLATFORM_CORE\s*=\s*\[([^\]]*)\]/)
   const core = new Set([...(coreBlock ? coreBlock[1] : '').matchAll(/'([^']+)'/g)].map(([, name]) => name))
-  const registered = [...config.matchAll(/^\s*'([A-Za-z0-9_]+)',?\s*$/gm)].map(([, name]) => name)
-  return registered.filter((name) => !core.has(name))
+  const registered = [...config.matchAll(/^\s{4,}'([A-Za-z0-9_]+)'\s*=>\s*\[/gm)].map(([, name]) => name)
+  return [...new Set(registered)].filter((name) => !core.has(name))
 }
 
 /** Front matter block of a page, or null when the file does not open with one. */

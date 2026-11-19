@@ -12,6 +12,11 @@
 
     "notification.bell": { "page": "docs/notifications.md", "source": "monolith/app/Domain/Notification" },
 
+    "billing.overview": { "page": "docs/billing/index.md", "source": "monolith/app/Domain/PaymentGateway" },
+    "billing.services-and-subscriptions": { "page": "docs/billing/services-and-subscriptions.md", "source": "monolith/app/Domain/Service" },
+    "billing.invoices-and-payments": { "page": "docs/billing/invoices-and-payments.md", "source": "monolith/app/Domain/PaymentGateway" },
+    "billing.payments-and-taxation": { "page": "docs/billing/payments-and-taxation.md", "source": "silverspoon/finance" },
+
     "legal.overview": { "page": "docs/legal/index.md", "source": "silverspoon/legal" },
     "legal.terms": { "page": "docs/legal/terms.md", "source": "silverspoon/legal" },
     "legal.privacy": { "page": "docs/legal/privacy.md", "source": "silverspoon/legal" },
@@ -21,6 +26,8 @@
     "silverspoon.domain": { "page": "docs/silverspoon/domain.md", "source": "silverspoon/platform" }
   },
   "waivers": {
+    "domain.archivd": "Product domain still registered in the backend registry; its pages are retired for this deployment, so there is nothing to document here yet.",
+    "domain.microstock": "Product subdomain still registered in the backend registry; its pages are retired for this deployment, so there is nothing to document here yet.",
     "currency.catalog": "Admin-only currency and FX catalog — operators only.",
     "activity-log.audit-trail": "Admin-only audit trail viewer — operators only.",
     "error-log.grouped-errors": "Admin-only persistent error viewer — operators only.",
